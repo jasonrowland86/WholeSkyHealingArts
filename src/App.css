@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=El+Messiri|Montserrat|Noto+Sans|Roboto+Mono');
+
+/*Whole app*/
+* {
+  box-sizing: border-box;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Helvetica';
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+
+/*Nav*/
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* background: #222324; */
+}
+.active {
+  font-weight: bolder;
+}
+.logo {
+  margin: 1em;
+}
+.nav-link {
+  color: black;
+  margin: 1em;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+.nav-link:before, .nav-link:after {
+  content: attr(link-attr);
+  text-decoration: inherit;
+}
+.nav-link:before {
+  font-weight: bold;
+  visibility: hidden;
+}
+.nav-link:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.nav-link:hover:before {
+  visibility: visible;
+}
+.nav-link:hover:after {
+  display: none;
+}
+
+/*Main content of each page*/
+.main {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10vh;
+}
+.left-side {
+  width: 50vw;
+}
+.right-side {
+  width: 50vw;
+  margin-right: 3em;
+}
+
+/*Landing*/
+.landing {
+  flex: 1;
+  text-align: center;
+}
+.landing-title {
+  margin-top: 33vh;
+  color: white;
+  font-family: 'El Messiri', sans-serif;
+  font-size: 3.5em;
+  font-weight: ;
+}
+.landing-title:hover {
+  cursor: pointer;
+}
+.landing-nav {
+  color: white;
+}
+.landing-logo {
+  margin: 1em;
+}
+.landing-nav-hack {
+  flex: 1;
+}
+
+/*Services*/
+.services {
+  display: flex;
+  flex-direction: row;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.service-left {
+  margin-left: 3em;
+  margin-top: 2em;
+}
+.massage-img {
+  width: 45vw;
+  margin: 3em;
+}
+h3.price {
+
+}
+p.price {
+
+}
+
+/*About*/
+.about-img {
+  width: 33vw;
+}
+.social-media-link:hover {
+  font-weight: bold;
+}
+.icon {
+  color: black;
+}
+
+/*Contact*/
+.contact {
+  flex: 1;
+  text-align: center;
+}
+
+/*Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 2vh;
+}
+#connect {
+  font-size: 20px;
+  margin-bottom: 3vh;
+  color: #222324;
+}
+#email-invalid {
+  color: white;
+  display: none;
+}
+#gform {
+  align-self: center;
+  width: 50vw;
+}
+form-item {
+  display: flex;
+}
+label {
+  color: #222324;
+}
+input {
+  padding: 3px;
+  outline: none;
+}
+textarea {
+  width: 250px;
+  height: 75px;
+}
+.submit {
+  background: #C0C0C7;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;;
+  margin-top: 3vh;
+  font-weight: bold;
+}
+.submit:hover {
+  cursor: pointer;
+  color: white;
+  background: #222324;
+  transition: .1s;
+}
+
+/*Footer*/
+.footer {
+  text-align: center;
+}

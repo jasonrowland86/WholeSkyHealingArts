@@ -27,7 +27,6 @@
 //     lastScrollTop = st;
 // }
 
-
 let title = document.getElementById('title');
 let background = document.getElementById('background');
 

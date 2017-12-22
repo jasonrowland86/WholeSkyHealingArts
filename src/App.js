@@ -19,6 +19,7 @@ class App extends Component {
     super();
     this.state = {
       landingPage: true,
+      didScroll: false,
     }
   this.hideHeader = this.hideHeader.bind(this);
   }

@@ -7,7 +7,7 @@ const About = () => {
     <div className="main">
       <Header />
       <div className="main-content">
-        <div className="left-side">
+        <div className="about-left left-side">
           <img className="about-img" src="Dan-full.jpg"></img>
         </div>
         <div className="right-side">
@@ -22,13 +22,14 @@ const About = () => {
               be achieved through the combination and application of various bodywork
               and energy balancing methods.
           </p>
+          <div className="about-right">
+            <h3>Find me on:</h3>
+            <a className="social-media-link"><p>Instagram</p></a>
+            <a className="social-media-link"><p>Facebook</p></a>
 
-          <h3>Find me on:</h3>
-          <a className="social-media-link"><p>Instagram</p></a>
-          <a className="social-media-link"><p>Facebook</p></a>
-
-          <a href="#" target="blank"><FontAwesome className="icon" name="facebook" size="1x"/></a>
-          <a href="#" target="blank"><FontAwesome className="icon" name="instagram" size="1x"/></a>
+            <a href="#" target="blank"><FontAwesome className="icon" name="facebook" size="1x"/></a>
+            <a href="#" target="blank"><FontAwesome className="icon" name="instagram" size="1x"/></a>
+          </div>
 
         </div>
       </div>

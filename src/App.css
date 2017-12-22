@@ -62,7 +62,6 @@ nav {
 
 /*Main content of each page*/
 .main {
-  text-align: center;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -107,6 +106,7 @@ nav {
 
 /*Services*/
 .services {
+  text-align: center;
   display: flex;
   flex-direction: row;
 }
@@ -133,6 +133,12 @@ p.price {
 /*About*/
 .about-img {
   width: 33vw;
+}
+.about-left {
+  text-align: center;
+}
+.about-right {
+  
 }
 .social-media-link:hover {
   font-weight: bold;

@@ -35,8 +35,8 @@ class Landing extends Component {
             <NavLink className="landing-nav nav-link" link-attr="Contact" to="/contact" activeClassName="active"></NavLink>
           </nav>
         </div>
-        
-        <h1 onMouseEnter={this.handleMouseOver} onMouseLeave={this.handleMouseOut} className='landing-title'>WHOLE SKY HEALING ARTS</h1>
+
+        <h1 onMouseEnter={this.handleMouseOver} onMouseLeave={this.handleMouseOut} className='landing-title'>Whole Sky Healing Arts</h1>
       </div>
     )
   }

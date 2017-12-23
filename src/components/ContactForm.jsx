@@ -3,7 +3,7 @@ import React from 'react';
 const ContactForm = () => {
   return(
     <div className="contact-form">
-      
+
       <h1 id="connect">Contact me for availability:</h1>
 
       <form id="gform" action="https://script.google.com/macros/s/AKfycbxl5LpPm_0ch0P3BzKRapFNbFlUVyPHsIfIZVUjfeEr1qTWzGFz/exec" method="POST">

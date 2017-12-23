@@ -7,10 +7,16 @@ const Contact = () => {
   return (
     <div className="contact">
       <Header />
-      <MyMap />
-      <h3>Located in Greenpoint Brooklyn</h3>
-      <p>Tuesday - Saturday</p>
+
+      <div className="map">
+        <MyMap />
+      </div>
+
+      <div className="contact-info">
+        <h3>Located in Greenpoint Brooklyn</h3>
+        <p>Tuesday - Saturday</p>
       <ContactForm />
+      </div>
     </div>
   )
 }

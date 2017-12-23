@@ -13,15 +13,15 @@ const About = () => {
         <div className="right-side">
 
           <h3>Whole Sky Healing Arts</h3>
-          <p>
-              is dedicated to the expansion of human life-force energy.
-              Our energy flow affects how we feel, how we think, and the overall state of our well being.
-              Energy blockages can be the result of injuries,traumas, diets, addictions,
-              lack of excercise, and most of all stress. Our goal is to restore proper
-              balance, alignment, vibration and energy flow in the human body. This will
-              be achieved through the combination and application of various bodywork
-              and energy balancing methods.
-          </p>
+          <p>Is dedicated to the expansion of human life-force energy.</p>
+          <p>Our energy flow affects how we feel, how we think, and the overall state of our well being.</p>
+          <p>Energy blockages can be the result of injuries, traumas, diets, addictions,
+            lack of excercise, and most of all stress.</p>
+          <p>Our goal is to restore proper
+            balance, alignment, vibration and energy flow in the human body. This will
+            be achieved through the combination and application of various bodywork
+            and energy balancing methods.</p>
+
           <div className="about-right">
             <h3>Find me on:</h3>
             <a className="social-media-link"><p>Instagram</p></a>

@@ -11,13 +11,13 @@ class Header extends Component {
   }
 
   handleHideNav() {
-    
+
   }
 
   render() {
     return (
       <div className="header">
-        <nav>
+        <nav className="nav-w-color">
           <Link className="logo" to="/" style={{ color: 'black' }}>Logo</Link>
           <Link className="landing-nav-hack" to=""></Link>
           <NavLink className="nav-link" link-attr="Services" to="/services" activeClassName="active" ></NavLink>

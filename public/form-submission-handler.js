@@ -1,4 +1,3 @@
-
 const sendEmail = window.sendEmail;
 
 function validEmail(email) { // see:

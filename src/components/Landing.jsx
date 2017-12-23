@@ -5,7 +5,7 @@ class Landing extends Component {
   constructor() {
     super();
     this.state = {
-      backgroundImg: `url(../Dan-sunset.jpg) no-repeat center center fixed`,
+      backgroundImg: `url(../photos/Dan-sunset.jpg) no-repeat center center fixed`,
     }
     this.handleMouseOver = this.handleMouseOver.bind(this);
     this.handleMouseOut = this.handleMouseOut.bind(this);
@@ -13,13 +13,13 @@ class Landing extends Component {
 
   handleMouseOver() {
     this.setState({
-      backgroundImg: `url(../Dan-hands.jpg) no-repeat center center fixed`,
+      backgroundImg: `url(../photos/Dan-hands.jpg) no-repeat center center fixed`,
     });
   }
 
   handleMouseOut() {
     this.setState({
-      backgroundImg: `url(../Dan-sunset.jpg) no-repeat center center fixed`,
+      backgroundImg: `url(../photos/Dan-sunset.jpg) no-repeat center center fixed`,
     })
   }
 

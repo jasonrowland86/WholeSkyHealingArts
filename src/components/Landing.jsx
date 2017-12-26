@@ -5,7 +5,17 @@ class Landing extends Component {
   constructor() {
     super();
     this.state = {
-      backgroundImg: `url(../photos/Dan-sunset.jpg) no-repeat center center fixed`,
+      backgroundImage: {
+        backgroundImage: `url(../photos/Dan-sunset.jpg)`,
+        backgroundSize: '100% 100%',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center fixed',
+        WebkitTransition: 'background-image 0.3s ease',
+        MozTransition: 'background-image 0.3s ease',
+        OTransition: 'background-image 0.3s ease',
+        msTransition: 'background-image 0.3s ease',
+        transition: 'background-image 0.3s ease',
+      }
     }
     this.handleMouseOver = this.handleMouseOver.bind(this);
     this.handleMouseOut = this.handleMouseOut.bind(this);
@@ -13,19 +23,39 @@ class Landing extends Component {
 
   handleMouseOver() {
     this.setState({
-      backgroundImg: `url(../photos/Dan-hands.jpg) no-repeat center center fixed`,
+      backgroundImage: {
+        backgroundImage: `url(../photos/Dan-hands.jpg)`,
+        backgroundSize: '100% 100%',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center fixed',
+        WebkitTransition: 'background-image 0.3s ease',
+        MozTransition: 'background-image 0.3s ease',
+        OTransition: 'background-image 0.3s ease',
+        msTransition: 'background-image 0.3s ease',
+        transition: 'background-image 0.3s ease',
+      }
     });
   }
 
   handleMouseOut() {
     this.setState({
-      backgroundImg: `url(../photos/Dan-sunset.jpg) no-repeat center center fixed`,
-    })
+      backgroundImage: {
+        backgroundImage: `url(../photos/Dan-sunset.jpg)`,
+        backgroundSize: '100% 100%',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center fixed',
+        WebkitTransition: 'background-image 0.3s ease',
+        MozTransition: 'background-image 0.3s ease',
+        OTransition: 'background-image 0.3s ease',
+        msTransition: 'background-image 0.3s ease',
+        transition: 'background-image 0.3s ease',
+      }
+    });
   }
 
   render() {
     return (
-      <div className="landing landing-img" style={{background: this.state.backgroundImg, backgroundSize: 'cover'}}>
+      <div className="landing landing-img" style={this.state.backgroundImage}>
         <div className="header">
           <nav>
             <Link className="landing-nav landing-logo" to="/">Logo</Link>
@@ -36,7 +66,11 @@ class Landing extends Component {
           </nav>
         </div>
 
-        <h1 onMouseEnter={this.handleMouseOver} onMouseLeave={this.handleMouseOut} className='landing-title'>Whole Sky Healing Arts</h1>
+        <div onMouseEnter={this.handleMouseOver} onMouseLeave={this.handleMouseOut} className='landing-title'>
+          <h1>Whole Sky</h1>
+          <h3>Healing Arts</h3>
+        </div>
+
       </div>
     )
   }

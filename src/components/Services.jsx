@@ -6,18 +6,7 @@ const Services = () => {
     <div className="main">
       <Header />
       <div className="main-content">
-        <div className="service-left left-side">
-          <h3>
-            Daniel Duron is a certified IPHM massage and bodywork (Alchemy of Touch)
-            practitioner, and Universal life-force energy (Reiki) provider.
-          </h3>
-          <p>
-            Alchemy of Touch is a fusion of Rebalancing massage from India that
-            integrates Deep Tissue massage, Myofascial release method, correct breathing,
-            meditative healing approach, visceral work, polarity energy work and
-            Thai yoga stretches. This method was developed by Tapesh Paradiso and
-            expanded with the expertise of Anouk Hornman.
-          </p>
+        <div className="service-left">
 
           <div className="services">
             <div className="service">
@@ -32,7 +21,7 @@ const Services = () => {
           </div>
 
         </div>
-        <div className="right-side">
+        <div className="service-right">
           <div className="service-images">
             <img className="massage-img" src="photos/Dan-massage.jpg"></img>
           </div>

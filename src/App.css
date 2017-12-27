@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=El+Messiri|Montserrat|Noto+Sans|Roboto+Mono');
 
-/*Whole app*/
+/*Whole App*/
 * {
   box-sizing: border-box;
 }
@@ -75,14 +75,6 @@ nav {
   flex-direction: row;
   margin-top: 10vh;
 }
-.left-side {
-  width: 50vw;
-}
-.right-side {
-  width: 50vw;
-  margin-right: 3em;
-  margin-top: -15px;
-}
 
 /*Landing*/
 .landing {
@@ -95,7 +87,7 @@ nav {
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
   letter-spacing: .1em;
-  width: 80vw;
+  width: 60vw;
   margin: 0 auto;
 }
 .landing-title:hover {
@@ -131,22 +123,23 @@ nav {
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin-right: 3em;
-}
-.service-left {
-  margin-left: 3em;
-  margin-top: 1em;
+  /* margin-right: 3em; */
 }
 .service h3 {
-  width: 10vw;
+  margin: 0;
+}
+.service-left {
+  justify-content: center;
+  width: 20vw;
 }
 .service-right {
-
+  flex: 1;
 }
 .massage-img {
-  width: 80%;
-  margin-left: 10vw;
-  margin-bottom: 5vh;
+  width: 70vw;
+}
+.service-images {
+  text-align: center;
 }
 .price {
   /* margin-left: 3em; */
@@ -154,14 +147,21 @@ nav {
 
 /*About*/
 .about-img {
-  width: 33vw;
-  margin-bottom: 1em;
+  width: 40vw;
 }
 .about-left {
   text-align: center;
+  flex: 1;
 }
 .about-right {
-  line-height: 1em;
+  width: 50vw;
+}
+.about-right div {
+  margin-right: 5vw;
+}
+.about-right h3{
+  margin: 0;
+  text-align: center;
 }
 .social-media-link:hover {
   font-weight: bold;
@@ -255,5 +255,5 @@ textarea {
 }
 
 @media only screen and (max-width: 960px) {
-  
+
 }

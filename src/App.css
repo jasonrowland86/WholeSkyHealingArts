@@ -20,12 +20,20 @@ a:hover {
 }
 
 /*Nav*/
-nav {
+nav div {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
+.nav-main {
+  display: flex;
+  flex-direction: row;
+}
+.nav-left {
+  flex: 1;
+}
 .nav-w-color {
+  display: flex;
   background: #F0EDEA;
 }
 .active {
@@ -130,13 +138,14 @@ nav {
 }
 .service-left {
   justify-content: center;
-  width: 20vw;
+  width: 30vw;
 }
 .service-right {
   flex: 1;
 }
 .massage-img {
-  width: 70vw;
+  width: 60vw;
+  /* margin-bottom: 5vh; */
 }
 .service-images {
   text-align: center;
@@ -190,7 +199,8 @@ nav {
   justify-content: space-around;
 }
 .media-links a{
-
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 .contact-info {
   display: flex;
@@ -250,9 +260,9 @@ textarea {
 }
 
 /*Footer*/
-.footer {
+/* .footer {
   text-align: center;
-}
+} */
 
 @media only screen and (max-width: 960px) {
 

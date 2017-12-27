@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import FontAwesome from 'react-fontawesome';
+import 'font-awesome/css/font-awesome.css'
 
 class Landing extends Component {
   constructor() {
     super();
     this.state = {
-      backgroundImage: {
+      backgroundImg: {
         backgroundImage: `url(../photos/Dan-sunset.jpg)`,
         backgroundSize: '100% 100%',
         backgroundRepeat: 'no-repeat',
@@ -15,7 +17,14 @@ class Landing extends Component {
         OTransition: 'background-image 0.3s ease',
         msTransition: 'background-image 0.3s ease',
         transition: 'background-image 0.3s ease',
-      }
+      },
+      mediaQuery: false,
+      navBar: {
+        display: "",
+      },
+      navMenu: {
+        display: "none",
+      },
     }
     this.handleMouseOver = this.handleMouseOver.bind(this);
     this.handleMouseOut = this.handleMouseOut.bind(this);
@@ -23,7 +32,7 @@ class Landing extends Component {
 
   handleMouseOver() {
     this.setState({
-      backgroundImage: {
+      backgroundImg: {
         backgroundImage: `url(../photos/Dan-hands.jpg)`,
         backgroundSize: '100% 100%',
         backgroundRepeat: 'no-repeat',
@@ -39,7 +48,7 @@ class Landing extends Component {
 
   handleMouseOut() {
     this.setState({
-      backgroundImage: {
+      backgroundImg: {
         backgroundImage: `url(../photos/Dan-sunset.jpg)`,
         backgroundSize: '100% 100%',
         backgroundRepeat: 'no-repeat',
@@ -55,14 +64,22 @@ class Landing extends Component {
 
   render() {
     return (
-      <div className="landing landing-img" style={this.state.backgroundImage}>
+      <div className="landing landing-img" style={this.state.backgroundImg}>
         <div className="header">
-          <nav>
-            <NavLink className="landing-nav landing-logo" to="/">Logo</NavLink>
-            <NavLink className="landing-nav-hack" to=""></NavLink>
-            <NavLink className="landing-nav nav-link" link-attr="Services" to="/services" activeClassName="active"></NavLink>
-            <NavLink className="landing-nav nav-link" link-attr="About" to="/about" activeClassName="active"></NavLink>
-            <NavLink className="landing-nav nav-link" link-attr="Contact" to="/contact" activeClassName="active"></NavLink>
+          <nav className="nav-main">
+
+            <div className="nav-left">
+              <NavLink className="landing-nav landing-logo" to="/">Logo</NavLink>
+              <NavLink className="landing-nav-hack" to=""></NavLink>
+            </div>
+
+            <div className="nav-right" style={this.state.navBar}>
+              <NavLink className="landing-nav nav-link" link-attr="Services" to="/services" activeClassName="active"></NavLink>
+              <NavLink className="landing-nav nav-link" link-attr="About" to="/about" activeClassName="active"></NavLink>
+              <NavLink className="landing-nav nav-link" link-attr="Contact" to="/contact" activeClassName="active"></NavLink>
+              <button style={this.state.navMenu} ><FontAwesome className="icon nav-menu" name="bars" size="1x"/>NavMenu</button>
+            </div>
+
           </nav>
         </div>
 

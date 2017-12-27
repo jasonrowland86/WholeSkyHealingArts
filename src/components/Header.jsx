@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
+import 'font-awesome/css/font-awesome.css'
 
 class Header extends Component {
   constructor() {
     super();
     this.state = {
-
+      mediaQuery: false,
+      navBar: {
+        display: "",
+      },
+      navMenu: {
+        display: "none",
+      },
     }
 
   }
@@ -15,18 +22,33 @@ class Header extends Component {
 
   }
 
+  getScreenSize() {
+
+  }
+
+  handleToggleNavMenu() {
+
+  }
+
   render() {
     return (
       <div className="header">
         <nav className="nav-w-color">
-          <NavLink className="nav-link" link-attr="Logo" to="/" activeClassName="active" ></NavLink>
-          <NavLink className="landing-nav-hack" to=""></NavLink>
-          <NavLink className="nav-link" link-attr="Services" to="/services" activeClassName="active" ></NavLink>
-          <NavLink className="nav-link" link-attr="About" to="/about" activeClassName="active" ></NavLink>
-          <NavLink className="nav-link" link-attr="Contact" to="/contact" activeClassName="active" ></NavLink>
 
-          <a href="#" target="blank"><FontAwesome className="icon" name="facebook" size="1x"/></a>
-          <a href="#" target="blank"><FontAwesome className="icon" name="instagram" size="1x"/></a>
+          <div className="nav-left">
+            <NavLink className="nav-link" link-attr="Logo" to="/" activeClassName="active" ></NavLink>
+            <NavLink className="landing-nav-hack" to=""></NavLink>
+          </div>
+
+          <div className="nav-right" style={this.state.navBar}>
+            <NavLink className="nav-link" link-attr="Services" to="/services" activeClassName="active" ></NavLink>
+            <NavLink className="nav-link" link-attr="About" to="/about" activeClassName="active" ></NavLink>
+            <NavLink className="nav-link" link-attr="Contact" to="/contact" activeClassName="active" ></NavLink>
+          </div>
+
+          <div className="menu-button">
+            <button style={this.state.navMenu} ><FontAwesome className="icon nav-menu" name="bars" size="1x"/></button>
+          </div>
 
         </nav>
       </div>

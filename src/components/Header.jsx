@@ -36,7 +36,7 @@ class Header extends Component {
         <nav className="nav-w-color">
 
           <div className="nav-left">
-            <NavLink className="nav-link" link-attr="Logo" to="/" activeClassName="active" ></NavLink>
+            <NavLink className="" link-attr="" to="/" activeClassName="active" ><img className="header-logo" src='./photos/favicon-96x96.png'></img></NavLink>
             <NavLink className="landing-nav-hack" to=""></NavLink>
           </div>
 

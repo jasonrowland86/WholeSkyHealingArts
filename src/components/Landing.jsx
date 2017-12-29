@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
-import 'font-awesome/css/font-awesome.css'
+import 'font-awesome/css/font-awesome.css';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 class Landing extends Component {
   constructor() {
     super();
     this.state = {
       backgroundImg: {
-        backgroundImage: `url(../photos/Dan-sunset.jpg)`,
+        backgroundImage: `url(../photos/Dan-sunset-edited.jpg)`,
         backgroundSize: '100% 100%',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center center fixed',
@@ -49,7 +50,7 @@ class Landing extends Component {
   handleMouseOut() {
     this.setState({
       backgroundImg: {
-        backgroundImage: `url(../photos/Dan-sunset.jpg)`,
+        backgroundImage: `url(../photos/Dan-sunset-edited.jpg)`,
         backgroundSize: '100% 100%',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center center fixed',
@@ -69,7 +70,7 @@ class Landing extends Component {
           <nav className="nav-main">
 
             <div className="nav-left">
-              <NavLink className="landing-nav landing-logo" to="/">Logo</NavLink>
+              <NavLink className="landing-nav landing-logo" to="/"><img className='hand-white' src='./photos/handweblogowhite-lg.png'></img></NavLink>
               <NavLink className="landing-nav-hack" to=""></NavLink>
             </div>
 

@@ -5,18 +5,22 @@ const Services = () => {
   return (
     <div className="main">
       <Header />
-      <div className="main-content">
+      <div className="service-content">
         <div className="service-left">
 
           <div className="services">
             <div className="service">
+
               <h3>60 Min</h3>
               <p className="price">$80</p>
+
             </div>
 
             <div className="service">
+
               <h3>90 Min</h3>
               <p className="price">$110</p>
+
             </div>
           </div>
 

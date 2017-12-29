@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=El+Messiri|Montserrat|Noto+Sans|Roboto+Mono');
 
-/*Whole App*/
+/* Whole App */
 * {
   box-sizing: border-box;
 }
@@ -19,7 +19,7 @@ a:hover {
   cursor: pointer;
 }
 
-/*Nav*/
+/* Nav */
 nav div {
   display: flex;
   flex-direction: row;
@@ -38,9 +38,6 @@ nav div {
 }
 .active {
   font-weight: bolder;
-}
-.logo {
-  margin: 1em;
 }
 .nav-link {
   color: black;
@@ -70,8 +67,13 @@ nav div {
 .nav-link:hover:after {
   display: none;
 }
+.header-logo {
+  width: 5vw;
+  margin-left: 1em;
+  margin-top: .5em;
+}
 
-/*Main content of each page*/
+/* Main content of each page */
 .main {
   flex: 1;
   display: flex;
@@ -84,7 +86,18 @@ nav div {
   margin-top: 10vh;
 }
 
-/*Landing*/
+/* CSSTransitionGroup */
+.changeBackground-appear {
+  background-image: url('/photos/Dan-sunset.jpg');
+}
+.changeBackground-appear.changeBackground-appear-active {
+  transition: background-image 0.3s ease;
+}
+
+/* Landing */
+.hand-white {
+  width: 5vw;
+}
 .landing {
   flex: 1;
   text-align: center;
@@ -95,19 +108,19 @@ nav div {
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
   letter-spacing: .1em;
-  width: 60vw;
+  width: 80vw;
   margin: 0 auto;
+  margin-top: 30vh;
 }
 .landing-title:hover {
   cursor: pointer;
 }
 .landing-title h1 {
-  font-size: 5em;
+  font-size: 10vw;
   margin: 0;
-  margin-top: 35vh;
 }
 .landing-title h3 {
-  font-size: 2.5em;
+  font-size: 5vw;
   margin: 0;
 }
 .landing-nav {
@@ -120,41 +133,54 @@ nav div {
   flex: 1;
 }
 
-/*Services*/
+/* Services */
+.service-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10vh;
+}
 .services {
   text-align: center;
   display: flex;
   flex-direction: column;
   line-height: 1em;
+  align-content:
+  /* margin-top: 3vh; */
 }
 .service {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  /* margin-right: 3em; */
+  width: 15vw;
+  margin: 0 auto;
+  margin-bottom: 3em;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .service h3 {
   margin: 0;
+  margin-top: 1em;
 }
 .service-left {
   justify-content: center;
-  width: 30vw;
+  width: 20vw;
 }
 .service-right {
   flex: 1;
 }
 .massage-img {
-  width: 60vw;
+  width: 70vw;
   /* margin-bottom: 5vh; */
 }
 .service-images {
   text-align: center;
 }
-.price {
-  /* margin-left: 3em; */
-}
 
-/*About*/
+/* About */
+.about {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10vh;
+}
 .about-img {
   width: 40vw;
 }
@@ -165,21 +191,15 @@ nav div {
 .about-right {
   width: 50vw;
 }
-.about-right div {
-  margin-right: 5vw;
-}
 .about-right h3{
   margin: 0;
   text-align: center;
 }
-.social-media-link:hover {
-  font-weight: bold;
-}
-.icon {
-  color: black;
+.about-text {
+  width: 45vw;
 }
 
-/*Contact*/
+/* Contact */
 .contact {
   flex: 1;
   text-align: center;
@@ -207,8 +227,11 @@ nav div {
   flex-direction: column;
   margin-top: 5em;
 }
+hr {
+  width: 60%;
+}
 
-/*Contact Form */
+/* Contact Form */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -258,12 +281,61 @@ textarea {
   background: #222324;
   transition: .1s;
 }
-
 /*Footer*/
 /* .footer {
   text-align: center;
 } */
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 750px) {
 
+  /* Services */
+  .service-content {
+    flex-direction: column-reverse;
+  }
+  .services {
+    flex-direction: row;
+    margin-top: 1.5em;
+    justify-content: center;
+  }
+  .service {
+    width: 40vw;
+    margin: 0 5vw;
+  }
+  .service-left {
+    width: 100vw;
+  }
+  .service-right {
+    flex: 1;
+  }
+  .massage-img {
+    width: 90vw;
+    /* margin-bottom: 5vh; */
+  }
+  .service-images {
+    text-align: center;
+  }
+
+  /* About */
+  .about {
+    flex-direction: column-reverse;
+  }
+  .about-img {
+    margin-bottom: 3em;
+    width: 90vw;
+  }
+  .about-right {
+    margin: 0 auto;
+    width: 80vw;
+  }
+  .about-text {
+    margin: 0 auto;
+    margin-bottom: 3em;
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .landing-title {
+    margin-top: 40vh;
+  }
 }

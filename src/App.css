@@ -303,6 +303,7 @@ textarea {
   }
   .service-left {
     width: 100vw;
+    margin-bottom: 1.5em;
   }
   .service-right {
     flex: 1;
@@ -324,13 +325,12 @@ textarea {
     width: 90vw;
   }
   .about-right {
-    margin: 0 auto;
-    width: 80vw;
+    width: 100vw;
   }
   .about-text {
     margin: 0 auto;
     margin-bottom: 3em;
-    width: 80vw;
+    width: 90vw;
   }
 }
 

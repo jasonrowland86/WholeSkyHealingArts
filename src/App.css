@@ -169,7 +169,7 @@ nav div {
 }
 .massage-img {
   width: 70vw;
-  /* margin-bottom: 5vh; */
+  margin-bottom: 5vh;
 }
 .service-images {
   text-align: center;
@@ -196,6 +196,7 @@ nav div {
   text-align: center;
 }
 .about-text {
+  margin-bottom: 5vh;
   width: 45vw;
 }
 
@@ -236,6 +237,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-self: center;
+  margin-bottom: 5vh;
 }
 .contactform-label {
   margin-bottom: 1em;

@@ -9,7 +9,7 @@ class Landing extends Component {
     super();
     this.state = {
       backgroundImg: {
-        backgroundImage: `url(../photos/Dan-sunset-edited.jpg)`,
+        backgroundImage: `url(../photos/Dan-sunset-edited2.jpg)`,
         backgroundSize: '100% 100%',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center center fixed',
@@ -50,7 +50,7 @@ class Landing extends Component {
   handleMouseOut() {
     this.setState({
       backgroundImg: {
-        backgroundImage: `url(../photos/Dan-sunset-edited.jpg)`,
+        backgroundImage: `url(../photos/Dan-sunset-edited2.jpg)`,
         backgroundSize: '100% 100%',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center center fixed',
@@ -70,7 +70,7 @@ class Landing extends Component {
           <nav className="nav-main">
 
             <div className="nav-left">
-              <NavLink className="landing-nav landing-logo" to="/"><img className='hand-white' src='./photos/handweblogowhite-lg.png'></img></NavLink>
+              <NavLink className="landing-nav landing-logo" to="/"><img className='hand-white' src='./favicons/favicon-96x96.png'></img></NavLink>
               <NavLink className="landing-nav-hack" to=""></NavLink>
             </div>
 

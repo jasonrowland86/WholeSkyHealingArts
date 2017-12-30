@@ -15,8 +15,9 @@ const ContactForm = () => {
         <span id="email-invalid">Must be a valid email address</span>
         <br></br>
         <label for="message">Message:</label><br></br>
-        <textarea type="text" name="comment"></textarea><br></br>
-
+        <div className="comment">
+        <textarea className="comment" type="text" name="comment"></textarea><br></br>
+        </div>
         <input className="submit" type="submit" value="Send"></input>
       </form>
       <br></br>

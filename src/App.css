@@ -68,7 +68,7 @@ nav div {
   display: none;
 }
 .header-logo {
-  width: 5vw;
+  width: 3em;
   margin-left: 1em;
   margin-top: .5em;
 }
@@ -96,7 +96,8 @@ nav div {
 
 /* Landing */
 .hand-white {
-  width: 5vw;
+  margin-top: -.5em;
+  width: 3em;
 }
 .landing {
   flex: 1;
@@ -144,8 +145,7 @@ nav div {
   display: flex;
   flex-direction: column;
   line-height: 1em;
-  align-content:
-  /* margin-top: 3vh; */
+  /* margin-top: 5vh; */
 }
 .service {
   display: flex;
@@ -161,7 +161,6 @@ nav div {
   margin-top: 1em;
 }
 .service-left {
-  justify-content: center;
   width: 20vw;
 }
 .service-right {
@@ -266,8 +265,11 @@ input {
   outline: none;
 }
 textarea {
-  width: 250px;
+  width: 40vw;
   height: 75px;
+}
+.comment {
+
 }
 .submit {
   background: #C0C0C7;
@@ -336,8 +338,40 @@ textarea {
   }
 }
 
+/* For Mobile Devices*/
 @media only screen and (max-width: 400px) {
+  /* Landing Page */
   .landing-title {
-    margin-top: 40vh;
+    margin-top: 36vh;
+  }
+  .landing-title h1 {
+    font-size: 13vw;
+    margin: 0;
+  }
+  .landing-title h3 {
+    font-size: 8vw;
+    margin: 0;
+  }
+
+  /* Contact Form */
+  textarea {
+    width: 50vw;
+  }
+  
+  /* Services */
+  .services {
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 1.5em;
+  }
+  .service {
+    width: 60vw;
+    margin: 0 5vw;
+    margin-bottom: 3em;
+    align-self: center;
+  }
+  .service-left {
+    width: 100vw;
+    margin-bottom: 1.5em;
   }
 }

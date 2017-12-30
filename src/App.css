@@ -342,7 +342,7 @@ textarea {
 @media only screen and (max-width: 400px) {
   /* Landing Page */
   .landing-title {
-    margin-top: 36vh;
+    width: 100vw;
   }
   .landing-title h1 {
     font-size: 13vw;
@@ -357,7 +357,7 @@ textarea {
   textarea {
     width: 50vw;
   }
-  
+
   /* Services */
   .services {
     flex-direction: column;

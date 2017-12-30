@@ -24,7 +24,7 @@ class Landing extends Component {
         display: "",
       },
       navMenu: {
-        display: "none",
+        display: "",
       },
     }
     this.handleMouseOver = this.handleMouseOver.bind(this);
@@ -78,8 +78,9 @@ class Landing extends Component {
               <NavLink className="landing-nav nav-link" link-attr="Services" to="/services" activeClassName="active"></NavLink>
               <NavLink className="landing-nav nav-link" link-attr="About" to="/about" activeClassName="active"></NavLink>
               <NavLink className="landing-nav nav-link" link-attr="Contact" to="/contact" activeClassName="active"></NavLink>
-              <button style={this.state.navMenu} ><FontAwesome className="icon nav-menu" name="bars" size="1x"/>NavMenu</button>
             </div>
+
+            <div className="landing-nav-menu nav-menu" style={{color: 'white'}}><FontAwesome className="icon" name="bars" size="1x"/></div>
 
           </nav>
         </div>

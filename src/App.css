@@ -32,6 +32,9 @@ nav div {
 .nav-left {
   flex: 1;
 }
+.nav-menu {
+  display: none;
+}
 .nav-w-color {
   display: flex;
   background: #F0EDEA;
@@ -69,8 +72,8 @@ nav div {
 }
 .header-logo {
   width: 3em;
-  margin-left: 1em;
-  margin-top: .5em;
+  margin-bottom: -1em;
+  margin-top: -.5em;
 }
 
 /* Main content of each page */
@@ -84,14 +87,6 @@ nav div {
   display: flex;
   flex-direction: row;
   margin-top: 10vh;
-}
-
-/* CSSTransitionGroup */
-.changeBackground-appear {
-  background-image: url('/photos/Dan-sunset.jpg');
-}
-.changeBackground-appear.changeBackground-appear-active {
-  transition: background-image 0.3s ease;
 }
 
 /* Landing */
@@ -340,6 +335,20 @@ textarea {
 
 /* For Mobile Devices*/
 @media only screen and (max-width: 400px) {
+  .nav-right {
+    display: none;
+  }
+  .nav-menu {
+    display: block;
+    margin: .5em;
+  }
+  .nav-menu:hover {
+    cursor: pointer;
+  }
+  .landing-nav-menu {
+    margin: 1em;
+  }
+
   /* Landing Page */
   .landing-title {
     width: 100vw;

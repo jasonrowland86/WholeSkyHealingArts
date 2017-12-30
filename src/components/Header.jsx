@@ -36,7 +36,7 @@ class Header extends Component {
         <nav className="nav-w-color">
 
           <div className="nav-left">
-            <NavLink className="" link-attr="" to="/" activeClassName="active" ><img className="header-logo" src='./photos/favicon-96x96.png'></img></NavLink>
+            <NavLink className="nav-link" link-attr="" to="/" activeClassName="active" ><img className="header-logo" src='./photos/favicon-96x96.png'></img></NavLink>
             <NavLink className="landing-nav-hack" to=""></NavLink>
           </div>
 
@@ -46,9 +46,7 @@ class Header extends Component {
             <NavLink className="nav-link" link-attr="Contact" to="/contact" activeClassName="active" ></NavLink>
           </div>
 
-          <div className="menu-button">
-            <button style={this.state.navMenu} ><FontAwesome className="icon nav-menu" name="bars" size="1x"/></button>
-          </div>
+          <div className="nav-menu"><FontAwesome className="icon nav-menu" name="bars" size="1x"/></div>
 
         </nav>
       </div>

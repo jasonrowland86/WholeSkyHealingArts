@@ -7,27 +7,42 @@ class Header extends Component {
   constructor() {
     super();
     this.state = {
-      mediaQuery: false,
-      navBar: {
-        display: "",
-      },
+      clicked: true,
       navMenu: {
-        display: "none",
-      },
+        display: 'none'
+      }
     }
-
-  }
-
-  handleHideNav() {
-
-  }
-
-  getScreenSize() {
-
+    this.handleToggleNavMenu = this.handleToggleNavMenu.bind(this);
+    this.showOrHideNavMenu = this.showOrHideNavMenu.bind(this);
   }
 
   handleToggleNavMenu() {
+    if(!this.state.clicked) {
+      this.setState({
+        clicked: true,
+      });
+    } else {
+      this.setState({
+        clicked: false,
+      });
+    }
+    this.showOrHideNavMenu();
+  }
 
+  showOrHideNavMenu() {
+    if(this.state.clicked) {
+      this.setState({
+        navMenu: {
+          display: 'block'
+        }
+      });
+    } else {
+      this.setState({
+        navMenu: {
+          display: 'none'
+        }
+      });
+    }
   }
 
   render() {
@@ -46,7 +61,14 @@ class Header extends Component {
             <NavLink className="nav-link" link-attr="Contact" to="/contact" activeClassName="active" ></NavLink>
           </div>
 
-          <div className="nav-menu"><FontAwesome className="icon nav-menu" name="bars" size="1x"/></div>
+          <div className=''>
+            <div onClick={this.handleToggleNavMenu} className="landing-nav-menu nav-menu" style={{color: 'black'}}><FontAwesome className="icon" name="bars" size="1x"/></div>
+            <div className="drop-down" style={this.state.navMenu}>
+              <NavLink className="nav-link" link-attr="Services" to="/services" activeClassName="active" ></NavLink>
+              <NavLink className="nav-link" link-attr="About" to="/about" activeClassName="active" ></NavLink>
+              <NavLink className="nav-link" link-attr="Contact" to="/contact" activeClassName="active" ></NavLink>
+            </div>
+          </div>
 
         </nav>
       </div>

@@ -19,16 +19,15 @@ class Landing extends Component {
         msTransition: 'background-image 0.3s ease',
         transition: 'background-image 0.3s ease',
       },
-      mediaQuery: false,
-      navBar: {
-        display: "",
-      },
+      clicked: false,
       navMenu: {
-        display: "",
-      },
+        display: 'none'
+      }
     }
     this.handleMouseOver = this.handleMouseOver.bind(this);
     this.handleMouseOut = this.handleMouseOut.bind(this);
+    this.handleToggleNavMenu = this.handleToggleNavMenu.bind(this);
+    this.showOrHideNavMenu = this.showOrHideNavMenu.bind(this);
   }
 
   handleMouseOver() {
@@ -63,6 +62,35 @@ class Landing extends Component {
     });
   }
 
+  handleToggleNavMenu() {
+    if(!this.state.clicked) {
+      this.setState({
+        clicked: true,
+      });
+    } else {
+      this.setState({
+        clicked: false,
+      });
+    }
+    this.showOrHideNavMenu();
+  }
+
+  showOrHideNavMenu() {
+    if(this.state.clicked) {
+      this.setState({
+        navMenu: {
+          display: 'block'
+        }
+      });
+    } else {
+      this.setState({
+        navMenu: {
+          display: 'none'
+        }
+      });
+    }
+  }
+
   render() {
     return (
       <div className="landing landing-img" style={this.state.backgroundImg}>
@@ -80,7 +108,14 @@ class Landing extends Component {
               <NavLink className="landing-nav nav-link" link-attr="Contact" to="/contact" activeClassName="active"></NavLink>
             </div>
 
-            <div className="landing-nav-menu nav-menu" style={{color: 'white'}}><FontAwesome className="icon" name="bars" size="1x"/></div>
+            <div className='drop-down-container'>
+              <div onClick={this.handleToggleNavMenu} className="landing-nav-menu nav-menu" style={{color: 'white'}}><FontAwesome className="icon" name="bars" size="1x"/></div>
+              <div className="drop-down" style={this.state.navMenu}>
+                <NavLink className="landing-nav nav-link" link-attr="Services" to="/services" activeClassName="active" ></NavLink>
+                <NavLink className="landing-nav nav-link" link-attr="About" to="/about" activeClassName="active" ></NavLink>
+                <NavLink className="landing-nav nav-link" link-attr="Contact" to="/contact" activeClassName="active" ></NavLink>
+              </div>
+            </div>
 
           </nav>
         </div>

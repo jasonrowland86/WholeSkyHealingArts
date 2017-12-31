@@ -32,9 +32,6 @@ nav div {
 .nav-left {
   flex: 1;
 }
-.nav-menu {
-  display: none;
-}
 .nav-w-color {
   display: flex;
   background: #F0EDEA;
@@ -74,6 +71,21 @@ nav div {
   width: 3em;
   margin-bottom: -1em;
   margin-top: -.5em;
+}
+.drop-down-container {
+  /* flex-direction: column;
+  position: absolute;
+  z-index: 100; */
+}
+.drop-down {
+  flex-direction: column;
+  float: right;
+  position: absolute;
+  z-index: 100;
+  margin-top: 2em;
+}
+.nav-menu {
+  display: none;
 }
 
 /* Main content of each page */
@@ -340,12 +352,13 @@ textarea {
   }
   .nav-menu {
     display: block;
-    margin: .5em;
+    margin: 1em;
   }
   .nav-menu:hover {
     cursor: pointer;
   }
   .landing-nav-menu {
+    /* margin-left: 1em; */
     margin: 1em;
   }
 

@@ -4,7 +4,7 @@ const ContactForm = () => {
   return(
     <div className="contact-form">
 
-      <h3 id="connect">Contact for booking</h3>
+      <h3 id="connect">Contact for inquiries</h3>
 
       <form id="gform" action="https://script.google.com/macros/s/AKfycbxl5LpPm_0ch0P3BzKRapFNbFlUVyPHsIfIZVUjfeEr1qTWzGFz/exec" method="POST">
         <label for="name">Name:</label><br></br>

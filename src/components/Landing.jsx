@@ -110,7 +110,7 @@ class Landing extends Component {
 
             <div className='drop-down-container'>
               <div onClick={this.handleToggleNavMenu} className="landing-nav-menu nav-menu" style={{color: 'white'}}><FontAwesome className="icon" name="bars" size="1x"/></div>
-              <div className="drop-down" style={this.state.navMenu}>
+              <div className="drop-down-landing" style={this.state.navMenu}>
                 <NavLink className="landing-nav nav-link" link-attr="Services" to="/services" activeClassName="active" ></NavLink>
                 <NavLink className="landing-nav nav-link" link-attr="About" to="/about" activeClassName="active" ></NavLink>
                 <NavLink className="landing-nav nav-link" link-attr="Contact" to="/contact" activeClassName="active" ></NavLink>

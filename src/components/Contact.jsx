@@ -18,8 +18,10 @@ const Contact = () => {
 
       <div className="contact-info">
 
-        <h3>Available</h3>
+        <h3>Availablility</h3>
         <p>Tuesday - Saturday</p>
+        <p>Studio Info?/In home?</p>
+        <p>Hours-Hours</p>
 
         <hr></hr>
 

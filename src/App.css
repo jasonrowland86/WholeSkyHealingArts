@@ -72,12 +72,16 @@ nav div {
   margin-bottom: -1em;
   margin-top: -.5em;
 }
-.drop-down-container {
-  /* flex-direction: column;
-  position: absolute;
-  z-index: 100; */
-}
 .drop-down {
+  flex-direction: column;
+  float: right;
+  position: absolute;
+  z-index: 100;
+  margin-top: 2em;
+  background-color: #F0EDEA;
+  /* background-color: rgba(191, 191, 189, 0.3 ); */
+}
+.drop-down-landing {
   flex-direction: column;
   float: right;
   position: absolute;
@@ -384,7 +388,6 @@ textarea {
   .services {
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 1.5em;
   }
   .service {
     width: 60vw;

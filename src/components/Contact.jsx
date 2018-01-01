@@ -25,8 +25,9 @@ const Contact = () => {
 
         <hr></hr>
 
-        <h3>Find me on</h3>
+        <h3>Find Daniel on</h3>
         <br></br>
+        
         <div className="media-links">
           <a href="https://www.facebook.com/daniel.duron.108" target="blank"><FontAwesome className="icon" name="facebook" size="2x"/></a>
           <a href="https://www.instagram.com/whole_sky_18/" target="blank"><FontAwesome className="icon" name="instagram" size="2x"/></a>

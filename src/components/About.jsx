@@ -7,31 +7,27 @@ const About = () => {
       <Header />
       <div className="about">
         <div className="about-left">
-          <div>
-            <img className="about-img" src="photos/Dan-full.jpg"></img>
-          </div>
+          <img className="about-img" src="photos/Dan-full.jpg"></img>
         </div>
 
         <div className="about-right">
 
           <div className="about-text">
-            <h3>Whole Sky Healing Arts</h3>
-            <p>Dedicated to the expansion of human life-force.</p>
-            <p>Our energy flow affects how we feel, how we think, and the overall state of our well being.</p>
-            <p>Energy blocks can be the result of injuries, traumas, diets, addictions,
-              lack of excercise, and most of all stress.</p>
+            <h3><strong>Whole Sky Healing Arts </strong></h3>
+            <p className="inline">is dedicated to the expansion of human life-force.</p>
+
             <p>Our goal is to restore proper
               balance, alignment, vibration and energy flow in the human body. This will
               be achieved through the combination and application of various bodywork
               and energy balancing methods.</p>
 
-            <h4>
+            <h3><strong>
               Daniel Duron is a certified IPHM massage and bodywork (Alchemy of Touch)
               practitioner, and Universal life-force energy (Reiki) provider.
-            </h4>
+            </strong></h3>
             <p>
               Alchemy of Touch is a fusion of Rebalancing massage from India that
-              integrates Deep Tissue massage, Myofascial release method, correct breathing,
+              integrates Deep Tissue massage, myofascial release method, correct breathing,
               meditative healing approach, visceral work, polarity energy work and
               Thai yoga stretches. This method was developed by Tapesh Paradiso and
               expanded with the expertise of Anouk Hornman.

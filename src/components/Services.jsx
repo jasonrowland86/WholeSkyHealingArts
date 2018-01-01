@@ -9,9 +9,13 @@ const Services = () => {
         <div className="service-left">
 
           <div className="services">
-            <h3>Massage Type</h3>
-            <p>Description</p>
-            <br></br>
+
+            <div className="service-description">
+              <h3>Alchemy of Touch</h3>
+              <p>Description</p>
+              <br></br>
+            </div>
+            
             <div className="service">
 
               <h3>60 Min</h3>

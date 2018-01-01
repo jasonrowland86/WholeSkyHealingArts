@@ -8,8 +8,8 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* font-family: 'Montserrat', sans-serif; */
-  font-family: 'Helvetica';
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Helvetica'; */
 }
 a {
   color: black;
@@ -38,6 +38,8 @@ nav div {
 }
 .active {
   font-weight: bolder;
+  border-bottom: 1px solid black;
+  height: 1.5em;
 }
 .nav-link {
   color: black;
@@ -69,8 +71,7 @@ nav div {
 }
 .header-logo {
   width: 3em;
-  margin-bottom: -1em;
-  margin-top: -.5em;
+  margin-top: -.7em;
 }
 .drop-down {
   flex-direction: column;
@@ -107,8 +108,8 @@ nav div {
 
 /* Landing */
 .hand-white {
-  margin-top: -.5em;
   width: 3em;
+  margin-top: -.7em;
 }
 .landing {
   flex: 1;
@@ -117,7 +118,7 @@ nav div {
 .landing-title {
   color: white;
   font-family: 'El Messiri', sans-serif;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   font-weight: lighter;
   letter-spacing: .1em;
   width: 80vw;
@@ -151,6 +152,9 @@ nav div {
   flex-direction: row;
   margin-top: 10vh;
 }
+.service-left {
+  width: 30vw;
+}
 .services {
   text-align: center;
   display: flex;
@@ -171,14 +175,11 @@ nav div {
   margin: 0;
   margin-top: 1em;
 }
-.service-left {
-  width: 20vw;
-}
 .service-right {
   flex: 1;
 }
 .massage-img {
-  width: 70vw;
+  width: 60vw;
   margin-bottom: 5vh;
 }
 .service-images {
@@ -193,6 +194,7 @@ nav div {
 }
 .about-img {
   width: 40vw;
+  margin-bottom: 3em;
 }
 .about-left {
   text-align: center;
@@ -203,11 +205,17 @@ nav div {
 }
 .about-right h3{
   margin: 0;
-  text-align: center;
+  /* text-align: center; */
 }
 .about-text {
   margin-bottom: 5vh;
   width: 45vw;
+}
+.about-text h3 {
+  display: inline;
+}
+.inline {
+  display: inline;
 }
 
 /* Contact */
@@ -308,13 +316,13 @@ textarea {
     flex-direction: column-reverse;
   }
   .services {
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 1.5em;
     justify-content: center;
   }
   .service {
-    width: 40vw;
-    margin: 0 5vw;
+    width: 60vw;
+    align-self: center;
   }
   .service-left {
     width: 100vw;
@@ -325,7 +333,7 @@ textarea {
   }
   .massage-img {
     width: 90vw;
-    /* margin-bottom: 5vh; */
+    margin-bottom: 0;
   }
   .service-images {
     text-align: center;
@@ -386,13 +394,13 @@ textarea {
 
   /* Services */
   .services {
-    flex-direction: column;
+    /* flex-direction: column; */
     margin: 0 auto;
+    margin-bottom: 3em;
   }
   .service {
     width: 60vw;
-    margin: 0 5vw;
-    margin-bottom: 3em;
+    /* margin: 0 5vw; */
     align-self: center;
   }
   .service-left {

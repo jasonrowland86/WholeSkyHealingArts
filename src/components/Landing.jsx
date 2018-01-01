@@ -98,8 +98,8 @@ class Landing extends Component {
           <nav className="nav-main">
 
             <div className="nav-left">
-              <NavLink className="landing-nav landing-logo" to="/"><img className='hand-white' src='./favicons/favicon-96x96.png'></img></NavLink>
-              <NavLink className="landing-nav-hack" to=""></NavLink>
+              <NavLink className="landing-nav landing-logo" style={{borderBottom: 'none'}} to="/"><img className='hand-white' src='./favicons/favicon-96x96.png'></img></NavLink>
+              <NavLink className="landing-nav-hack" style={{borderBottom: 'none'}} to=""></NavLink>
             </div>
 
             <div className="nav-right" style={this.state.navBar}>
@@ -121,7 +121,7 @@ class Landing extends Component {
         </div>
 
         <div onMouseEnter={this.handleMouseOver} onMouseLeave={this.handleMouseOut} className='landing-title'>
-          <h1>Whole Sky</h1>
+          <h1>WHOLE SKY</h1>
           <h3>Healing Arts</h3>
         </div>
 

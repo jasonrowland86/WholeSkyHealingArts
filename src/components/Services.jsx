@@ -11,11 +11,11 @@ const Services = () => {
           <div className="services">
 
             <div className="service-description">
-              <h3>Alchemy of Touch</h3>
-              <p>Description</p>
+              <h3>Massage</h3>
+              <p>Alchemy of Touch</p>
               <br></br>
             </div>
-            
+
             <div className="service">
 
               <h3>60 Min</h3>

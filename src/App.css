@@ -63,12 +63,12 @@ nav div {
   right: 0;
   bottom: 0;
 }
-.nav-link:hover:before {
+/* .nav-link:hover:before {
   visibility: visible;
 }
 .nav-link:hover:after {
   display: none;
-}
+} */
 .header-logo {
   width: 3em;
   margin-top: -.7em;

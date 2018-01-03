@@ -8,10 +8,10 @@ const ContactForm = () => {
 
       <form id="gform" action="https://script.google.com/macros/s/AKfycbxl5LpPm_0ch0P3BzKRapFNbFlUVyPHsIfIZVUjfeEr1qTWzGFz/exec" method="POST">
         <label for="name">Name:</label><br></br>
-        <input id="name" type="text" name="name" size="30"></input><br></br>
+        <input id="name" className="name" type="text" name="name" size="30"></input><br></br>
         <br></br>
         <label for="email">Your Email:</label><br></br>
-        <input type="text" name="mail" size="30"></input><br></br>
+        <input className="email" type="text" name="mail" size="30"></input><br></br>
         <span id="email-invalid">Must be a valid email address</span>
         <br></br>
         <label for="message">Message:</label><br></br>

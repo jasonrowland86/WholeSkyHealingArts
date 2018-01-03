@@ -6,8 +6,16 @@ const About = () => {
     <div className="main">
       <Header />
       <div className="about">
+
         <div className="about-left">
           <img className="about-img" src="photos/Dan-full.jpg"></img>
+            <p className="about-p-mobile">
+              <a className="inline" href="https://alchemyoftouch.com/"><h3><strong>Alchemy of Touch</strong></h3></a> is a fusion of Rebalancing massage from India that
+              integrates Deep Tissue massage, myofascial release method, correct breathing,
+              meditative healing approach, visceral work, polarity energy work and
+              Thai yoga stretches. This method was developed by Tapesh Paradiso and
+              expanded with the expertise of Anouk Hornman.
+            </p>
         </div>
 
         <div className="about-right">
@@ -25,13 +33,15 @@ const About = () => {
               Daniel Duron is a certified IPHM massage and bodywork (Alchemy of Touch)
               practitioner, and Universal life-force energy (Reiki) provider.
             </strong></h3>
-            <p>
-              Alchemy of Touch is a fusion of Rebalancing massage from India that
+
+            <p className="about-p-desktop">
+              <a className="inline" href="https://alchemyoftouch.com/"><h3><strong>Alchemy of Touch</strong></h3></a> is a fusion of Rebalancing massage from India that
               integrates Deep Tissue massage, myofascial release method, correct breathing,
               meditative healing approach, visceral work, polarity energy work and
               Thai yoga stretches. This method was developed by Tapesh Paradiso and
               expanded with the expertise of Anouk Hornman.
             </p>
+
           </div>
 
         </div>

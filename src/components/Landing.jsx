@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
 import 'font-awesome/css/font-awesome.css';
-import { CSSTransitionGroup } from 'react-transition-group';
 
 class Landing extends Component {
   constructor() {
@@ -19,9 +18,12 @@ class Landing extends Component {
         msTransition: 'background-image 0.3s ease',
         transition: 'background-image 0.3s ease',
       },
-      clicked: false,
-      navMenu: {
-        display: 'none'
+      clicked: true,
+      dropDown: {
+        transition: '.5s cubic-bezier(0.25,0.1,0.25,1)',
+        transform: 'translateY(-100%)',
+        zIndex: '-1',
+        background: 'none'
       }
     }
     this.handleMouseOver = this.handleMouseOver.bind(this);
@@ -76,16 +78,23 @@ class Landing extends Component {
   }
 
   showOrHideNavMenu() {
+    console.log('clicked!');
     if(this.state.clicked) {
       this.setState({
-        navMenu: {
-          display: 'block'
+        dropDown: {
+          transition: '.5s cubic-bezier(0.25,0.1,0.25,1)',
+          transform: 'translateY(0%)',
+          zIndex: '0',
+          background: 'none'
         }
       });
     } else {
       this.setState({
-        navMenu: {
-          display: 'none'
+        dropDown: {
+          transition: '.5s cubic-bezier(0.25,0.1,0.25,1)',
+          transform: 'translateY(-100%)',
+          zIndex: '-1',
+          background: 'none'
         }
       });
     }
@@ -94,7 +103,7 @@ class Landing extends Component {
   render() {
     return (
       <div className="landing landing-img" style={this.state.backgroundImg}>
-        <div className="header">
+        <header>
           <nav className="nav-main">
 
             <div className="nav-left">
@@ -102,23 +111,23 @@ class Landing extends Component {
               <NavLink className="landing-nav-hack" style={{borderBottom: 'none'}} to=""></NavLink>
             </div>
 
-            <div className="nav-right" style={this.state.navBar}>
+            <div className="nav-right">
               <NavLink className="landing-nav nav-link" link-attr="Services" to="/services" activeClassName="active"></NavLink>
               <NavLink className="landing-nav nav-link" link-attr="About" to="/about" activeClassName="active"></NavLink>
               <NavLink className="landing-nav nav-link" link-attr="Contact" to="/contact" activeClassName="active"></NavLink>
             </div>
 
-            <div className='drop-down-container'>
-              <div onClick={this.handleToggleNavMenu} className="landing-nav-menu nav-menu" style={{color: 'white'}}><FontAwesome className="icon" name="bars" size="1x"/></div>
-              <div className="drop-down-landing" style={this.state.navMenu}>
-                <NavLink className="landing-nav nav-link" link-attr="Services" to="/services" activeClassName="active" ></NavLink>
-                <NavLink className="landing-nav nav-link" link-attr="About" to="/about" activeClassName="active" ></NavLink>
-                <NavLink className="landing-nav nav-link" link-attr="Contact" to="/contact" activeClassName="active" ></NavLink>
+            <div onClick={this.handleToggleNavMenu} className="landing-nav-menu nav-menu" style={{color: 'white'}}><FontAwesome className="icon" name="bars" size="lg"/></div>
+            <div className="drop-down drop-down-hide" style={this.state.dropDown}>
+              <div className=''>
+                  <NavLink className="landing-nav nav-link" link-attr="Services" to="/services" activeClassName="active" ></NavLink>
+                  <NavLink className="landing-nav nav-link" link-attr="About" to="/about" activeClassName="active" ></NavLink>
+                  <NavLink className="landing-nav nav-link" link-attr="Contact" to="/contact" activeClassName="active" ></NavLink>
               </div>
             </div>
 
           </nav>
-        </div>
+        </header>
 
         <div onMouseEnter={this.handleMouseOver} onMouseLeave={this.handleMouseOut} className='landing-title'>
           <h1>WHOLE SKY</h1>

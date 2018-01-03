@@ -8,8 +8,10 @@ class Header extends Component {
     super();
     this.state = {
       clicked: true,
-      navMenu: {
-        display: 'none'
+      dropDown: {
+        transition: '.5s cubic-bezier(0.25,0.1,0.25,1)',
+        transform: 'translateY(-100%)',
+        zIndex: '-1',
       }
     }
     this.handleToggleNavMenu = this.handleToggleNavMenu.bind(this);
@@ -32,14 +34,18 @@ class Header extends Component {
   showOrHideNavMenu() {
     if(this.state.clicked) {
       this.setState({
-        navMenu: {
-          display: 'block'
+        dropDown: {
+          transition: '.5s cubic-bezier(0.25,0.1,0.25,1)',
+          transform: 'translateY(0%)',
+          zIndex: '0',
         }
       });
     } else {
       this.setState({
-        navMenu: {
-          display: 'none'
+        dropDown: {
+          transition: '.5s cubic-bezier(0.25,0.1,0.25,1)',
+          transform: 'translateY(-100%)',
+          zIndex: '-1'
         }
       });
     }
@@ -47,7 +53,7 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="header">
+      <header>
         <nav className="nav-w-color">
 
           <div className="nav-left">
@@ -55,23 +61,25 @@ class Header extends Component {
             <NavLink className="landing-nav-hack" style={{borderBottom: 'none'}} to=""></NavLink>
           </div>
 
-          <div className="nav-right" style={this.state.navBar}>
+          <div className="nav-right">
             <NavLink className="nav-link" link-attr="Services" to="/services" activeClassName="active" ></NavLink>
             <NavLink className="nav-link" link-attr="About" to="/about" activeClassName="active" ></NavLink>
             <NavLink className="nav-link" link-attr="Contact" to="/contact" activeClassName="active" ></NavLink>
+            <NavLink className="nav-link" link-attr="Links" to="/links" activeClassName="active" ></NavLink>
           </div>
 
-          <div className=''>
-            <div onClick={this.handleToggleNavMenu} className="landing-nav-menu nav-menu" style={{color: 'black'}}><FontAwesome className="icon" name="bars" size="1x"/></div>
-            <div className="drop-down" style={this.state.navMenu}>
+          <div onClick={this.handleToggleNavMenu} className="landing-nav-menu nav-menu" style={{color: 'black'}}><FontAwesome className="icon" name="bars" size="lg"/></div>
+          <div className="drop-down drop-down-hide" style={this.state.dropDown}>
+            <div className=''>
               <NavLink className="nav-link" link-attr="Services" to="/services" activeClassName="active" ></NavLink>
               <NavLink className="nav-link" link-attr="About" to="/about" activeClassName="active" ></NavLink>
               <NavLink className="nav-link" link-attr="Contact" to="/contact" activeClassName="active" ></NavLink>
+              <NavLink className="nav-link" link-attr="Links" to="/links" activeClassName="active" ></NavLink>
             </div>
           </div>
 
         </nav>
-      </div>
+      </header>
     )
   }
 }

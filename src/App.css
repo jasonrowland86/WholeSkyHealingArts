@@ -31,6 +31,7 @@ nav div {
 }
 .nav-left {
   flex: 1;
+  z-index: 3;
 }
 .nav-w-color {
   display: flex;
@@ -63,12 +64,6 @@ nav div {
   right: 0;
   bottom: 0;
 }
-/* .nav-link:hover:before {
-  visibility: visible;
-}
-.nav-link:hover:after {
-  display: none;
-} */
 .header-logo {
   width: 3em;
   margin-top: -.7em;
@@ -77,19 +72,22 @@ nav div {
   flex-direction: column;
   float: right;
   position: absolute;
-  z-index: 100;
-  margin-top: 2em;
+  /* z-index: -1; */
+  margin-top: 2.5em;
+  width: 100%;
   background-color: #F0EDEA;
-  /* background-color: rgba(191, 191, 189, 0.3 ); */
 }
 .drop-down-landing {
   flex-direction: column;
   float: right;
   position: absolute;
-  z-index: 100;
-  margin-top: 2em;
+  z-index: -1;
+  margin-top: 2.5em;
 }
 .nav-menu {
+  display: none;
+}
+.drop-down-hide {
   display: none;
 }
 
@@ -189,7 +187,6 @@ nav div {
 /* About */
 .about {
   display: flex;
-  flex-direction: row;
   margin-top: 10vh;
 }
 .about-img {
@@ -200,6 +197,12 @@ nav div {
   text-align: center;
   flex: 1;
 }
+.about-left p{
+  text-align:left;
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 3em;
+}
 .about-right {
   width: 50vw;
 }
@@ -208,7 +211,7 @@ nav div {
   /* text-align: center; */
 }
 .about-text {
-  margin-bottom: 5vh;
+  margin-bottom: 3em;
   width: 45vw;
 }
 .about-text h3 {
@@ -216,6 +219,9 @@ nav div {
 }
 .inline {
   display: inline;
+}
+.about-p-mobile {
+  display: none;
 }
 
 /* Contact */
@@ -297,6 +303,7 @@ textarea {
   padding: 5px 10px;;
   margin-top: 3vh;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 .submit:hover {
   cursor: pointer;
@@ -304,10 +311,15 @@ textarea {
   background: #222324;
   transition: .1s;
 }
-/*Footer*/
-/* .footer {
+
+/* Links */
+
+.links {
   text-align: center;
-} */
+  margin-top: 3em;
+}
+
+/***** Media Queries *****/
 
 @media only screen and (max-width: 750px) {
 
@@ -344,7 +356,7 @@ textarea {
     flex-direction: column-reverse;
   }
   .about-img {
-    margin-bottom: 3em;
+    margin-bottom: 1em;
     width: 90vw;
   }
   .about-right {
@@ -354,6 +366,21 @@ textarea {
     margin: 0 auto;
     margin-bottom: 3em;
     width: 90vw;
+  }
+  .about-p-desktop {
+    display: none;
+  }
+  .about-p-mobile {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .name {
+    width: 40vw;
+  }
+  .email {
+    width: 40vw;
   }
 }
 
@@ -370,9 +397,13 @@ textarea {
     cursor: pointer;
   }
   .landing-nav-menu {
-    /* margin-left: 1em; */
+    /* display: block; */
     margin: 1em;
   }
+  .drop-down-hide {
+    display: inline-block;
+  }
+
 
   /* Landing Page */
   .landing-title {
@@ -396,15 +427,18 @@ textarea {
   .services {
     /* flex-direction: column; */
     margin: 0 auto;
-    margin-bottom: 3em;
   }
   .service {
     width: 60vw;
-    /* margin: 0 5vw; */
     align-self: center;
   }
   .service-left {
     width: 100vw;
     margin-bottom: 1.5em;
+  }
+
+  /* About Page */
+  .about-p-desktop {
+    display: none;
   }
 }

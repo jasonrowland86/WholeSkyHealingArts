@@ -64,6 +64,10 @@ nav div {
   right: 0;
   bottom: 0;
 }
+.nav-link:hover {
+  border-bottom: 1px solid black;
+  height: 1.5em;
+}
 .header-logo {
   width: 3em;
   margin-top: -.7em;
@@ -136,6 +140,9 @@ nav div {
 }
 .landing-nav {
   color: white;
+}
+.landing-nav:hover {
+  border-bottom: 1px solid white;
 }
 .landing-logo {
   margin: 1em;
@@ -321,6 +328,10 @@ textarea {
 .links hr {
   margin: 1em auto;
 }
+.link {
+  text-align: center;
+  margin-bottom: 3em;
+}
 
 /***** Media Queries *****/
 
@@ -375,6 +386,12 @@ textarea {
   }
   .about-p-mobile {
     display: block;
+  }
+
+  /* Links */
+  .link {
+    text-align: center;
+    margin-bottom: 3em;
   }
 }
 

@@ -7,7 +7,7 @@ import 'font-awesome/css/font-awesome.css'
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="main contact">
       <Header />
 
       <h3 className="contact-heading">Located in Greenpoint Brooklyn</h3>
@@ -27,7 +27,7 @@ const Contact = () => {
 
         <h3>Find Daniel on</h3>
         <br></br>
-        
+
         <div className="media-links">
           <a href="https://www.facebook.com/daniel.duron.108" target="blank"><FontAwesome className="icon" name="facebook" size="2x"/></a>
           <a href="https://www.instagram.com/whole_sky_18/" target="blank"><FontAwesome className="icon" name="instagram" size="2x"/></a>

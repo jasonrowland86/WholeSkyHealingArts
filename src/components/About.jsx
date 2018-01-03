@@ -10,7 +10,7 @@ const About = () => {
         <div className="about-left">
           <img className="about-img" src="photos/Dan-full.jpg"></img>
             <p className="about-p-mobile">
-              <a className="inline" href="https://alchemyoftouch.com/"><h3><strong>Alchemy of Touch</strong></h3></a> is a fusion of Rebalancing massage from India that
+              <a href="https://alchemyoftouch.com/"><h3 className="inline"><strong>Alchemy of Touch</strong></h3></a> is a fusion of Rebalancing massage from India that
               integrates Deep Tissue massage, myofascial release method, correct breathing,
               meditative healing approach, visceral work, polarity energy work and
               Thai yoga stretches. This method was developed by Tapesh Paradiso and
@@ -35,7 +35,7 @@ const About = () => {
             </strong></h3>
 
             <p className="about-p-desktop">
-              <a className="inline" href="https://alchemyoftouch.com/"><h3><strong>Alchemy of Touch</strong></h3></a> is a fusion of Rebalancing massage from India that
+              <a href="https://alchemyoftouch.com/"><h3 className="inline"><strong>Alchemy of Touch</strong></h3></a> is a fusion of Rebalancing massage from India that
               integrates Deep Tissue massage, myofascial release method, correct breathing,
               meditative healing approach, visceral work, polarity energy work and
               Thai yoga stretches. This method was developed by Tapesh Paradiso and

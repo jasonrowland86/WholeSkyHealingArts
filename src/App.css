@@ -318,6 +318,9 @@ textarea {
   text-align: center;
   margin-top: 3em;
 }
+.links hr {
+  margin: 1em auto;
+}
 
 /***** Media Queries *****/
 

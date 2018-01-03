@@ -11,8 +11,8 @@ const Services = () => {
           <div className="services">
 
             <div className="service-description">
-              <h3>Massage</h3>
-              <p>Alchemy of Touch</p>
+              <h3><a href="https://alchemyoftouch.com/">Alchemy of Touch</a></h3>
+              <p>Massage</p>
               <br></br>
             </div>
 

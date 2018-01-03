@@ -13,11 +13,11 @@ const MyMap = compose(
   withGoogleMap
 )((props) =>
   <GoogleMap
-    defaultZoom={14}
-    defaultCenter={{ lat: 40.7245448, lng: -73.9418603 }}
+    defaultZoom={16}
+    defaultCenter={{ lat: 40.7259751, lng: -73.9499680 }}
   >
 
-   <Marker position={{ lat: 40.7245448, lng: -73.9418603 }} />
+   <Marker position={{ lat: 40.7259751, lng: -73.9499680 }} />
   </GoogleMap>
 )
 

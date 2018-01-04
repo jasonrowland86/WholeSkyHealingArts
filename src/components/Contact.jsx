@@ -20,8 +20,8 @@ const Contact = () => {
 
         <h3>Availablility</h3>
         <p>Tuesday - Saturday</p>
-        <p>Studio Info?/In home?</p>
-        <p>Hours-Hours</p>
+        <p>In studio</p>
+        <p>Hours are flexible</p>
 
         <hr></hr>
 

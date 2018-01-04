@@ -15,6 +15,7 @@ const Services = () => {
               <p>Massage</p>
               <br></br>
             </div>
+            <hr></hr>
 
             <div className="service">
 

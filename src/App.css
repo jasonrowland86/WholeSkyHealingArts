@@ -173,12 +173,15 @@ nav div {
   width: 15vw;
   margin: 0 auto;
   margin-bottom: 3em;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  /* border-top: 1px solid black;
+  border-bottom: 1px solid black; */
 }
 .service h3 {
   margin: 0;
   margin-top: 1em;
+}
+.service-description p {
+  margin-bottom: 0;
 }
 .service-right {
   flex: 1;
@@ -340,6 +343,7 @@ textarea {
   /* Services */
   .service-content {
     flex-direction: column-reverse;
+    margin-bottom: 2em;
   }
   .services {
     flex-direction: column;
@@ -349,6 +353,7 @@ textarea {
   .service {
     width: 60vw;
     align-self: center;
+    margin-bottom: 0;
   }
   .service-left {
     width: 100vw;

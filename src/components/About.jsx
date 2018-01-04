@@ -26,7 +26,7 @@ const About = () => {
 
             <p>Our goal is to restore proper
               balance, alignment, vibration and energy flow in the human body. This will
-              be achieved through the combination and application of various bodywork
+              be achieved through a combination and application of various bodywork
               and energy balancing methods.</p>
 
             <h3><strong>

@@ -45,6 +45,7 @@ nav div {
 .nav-link {
   color: black;
   margin: 1em;
+  margin-top: 2em;
   display: block;
   position: relative;
   text-align: center;
@@ -70,7 +71,8 @@ nav div {
 }
 .header-logo {
   width: 3em;
-  margin-top: -.7em;
+  margin-left: -.2em;
+  margin-top: -1.2em;
 }
 .drop-down {
   flex-direction: column;
@@ -94,6 +96,9 @@ nav div {
 .drop-down-hide {
   display: none;
 }
+.icon {
+  margin-top: .5em;
+}
 
 /* Main content of each page */
 .main {
@@ -111,7 +116,7 @@ nav div {
 /* Landing */
 .hand-white {
   width: 3em;
-  margin-top: -.7em;
+  margin: -.7em;
 }
 .landing {
   flex: 1;
@@ -145,7 +150,8 @@ nav div {
   border-bottom: 1px solid white;
 }
 .landing-logo {
-  margin: 1em;
+  margin-left: 1.5em;
+  margin-top: 1.5em;
 }
 .landing-nav-hack {
   flex: 1;

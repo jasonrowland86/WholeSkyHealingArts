@@ -121,6 +121,7 @@ nav div {
 .landing {
   flex: 1;
   text-align: center;
+  background-color: black;
 }
 .landing-title {
   color: white;
@@ -131,6 +132,7 @@ nav div {
   width: 80vw;
   margin: 0 auto;
   margin-top: 30vh;
+  align-self: center;
 }
 .landing-title:hover {
   cursor: pointer;
@@ -145,6 +147,7 @@ nav div {
 }
 .landing-nav {
   color: white;
+  height: 1.5em;
 }
 .landing-nav:hover {
   border-bottom: 1px solid white;

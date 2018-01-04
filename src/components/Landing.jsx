@@ -34,17 +34,7 @@ class Landing extends Component {
 
   handleMouseOver() {
     this.setState({
-      backgroundImg: {
-        backgroundImage: `url(../photos/Dan-hands.jpg)`,
-        backgroundSize: '100% 100%',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center center fixed',
-        WebkitTransition: 'background-image 0.3s ease',
-        MozTransition: 'background-image 0.3s ease',
-        OTransition: 'background-image 0.3s ease',
-        msTransition: 'background-image 0.3s ease',
-        transition: 'background-image 0.3s ease',
-      }
+      backgroundImg: this.image,
     });
   }
 
@@ -100,6 +90,20 @@ class Landing extends Component {
     }
   }
 
+  componentWillMount() {
+    this.image = {
+      backgroundImage: `url(../photos/Dan-hands.jpg)`,
+      backgroundSize: '100% 100%',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center center fixed',
+      WebkitTransition: 'background-image 0.3s ease',
+      MozTransition: 'background-image 0.3s ease',
+      OTransition: 'background-image 0.3s ease',
+      msTransition: 'background-image 0.3s ease',
+      transition: 'background-image 0.3s ease',
+    }
+  }
+
   render() {
     return (
       <div className="landing landing-img" style={this.state.backgroundImg}>
@@ -115,7 +119,6 @@ class Landing extends Component {
               <NavLink className="landing-nav nav-link" link-attr="Services" to="/services" activeClassName="active"></NavLink>
               <NavLink className="landing-nav nav-link" link-attr="About" to="/about" activeClassName="active"></NavLink>
               <NavLink className="landing-nav nav-link" link-attr="Contact" to="/contact" activeClassName="active"></NavLink>
-              <NavLink className="landing-nav nav-link" link-attr="Links" to="/links" activeClassName="active" ></NavLink>
             </div>
 
             <div onClick={this.handleToggleNavMenu} className="landing-nav-menu nav-menu" style={{color: 'white'}}><FontAwesome className="icon" name="bars" size="lg"/></div>
@@ -124,7 +127,6 @@ class Landing extends Component {
                   <NavLink className="landing-nav nav-link" link-attr="Services" to="/services" activeClassName="active" ></NavLink>
                   <NavLink className="landing-nav nav-link" link-attr="About" to="/about" activeClassName="active" ></NavLink>
                   <NavLink className="landing-nav nav-link" link-attr="Contact" to="/contact" activeClassName="active" ></NavLink>
-                  <NavLink className="landing-nav nav-link" link-attr="Links" to="/links" activeClassName="active" ></NavLink>
               </div>
             </div>
 

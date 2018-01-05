@@ -15,6 +15,7 @@ import Services from './components/Services';
 import About from './components/About';
 import Contact from './components/Contact';
 import Links from './components/Links';
+import TestLanding from './components/TestLanding';
 
 class App extends Component {
   constructor() {
@@ -41,6 +42,7 @@ class App extends Component {
           <Route exact path='/about' render={() => <About />} />
           <Route exact path='/contact' render={() => <Contact />} />
           <Route exact path='/links' render={() => <Links />} />
+          <Route exact path='/test' render={() => <TestLanding />} />
         </div>
       </Router>
     );

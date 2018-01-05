@@ -122,6 +122,7 @@ nav div {
   flex: 1;
   text-align: center;
   background-color: black;
+  background-image: url(/photos/Dan-hands.jpg);
 }
 .landing-title {
   color: white;
@@ -144,6 +145,7 @@ nav div {
 .landing-title h3 {
   font-size: 5vw;
   margin: 0;
+  margin-top: -.8em;
 }
 .landing-nav {
   color: white;
@@ -449,7 +451,6 @@ textarea {
   }
   .landing-title h3 {
     font-size: 8vw;
-    margin: 0;
   }
 
   /* Contact Form */

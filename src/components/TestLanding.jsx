@@ -1,13 +1,13 @@
-import React, { Component, Image } from 'react';
+import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
 import 'font-awesome/css/font-awesome.css';
 
-class Landing extends Component {
+class TestLanding extends Component {
   constructor() {
     super();
     this.state = {
-      backgroundImg: {
+      backgroundImgOne: {
         backgroundImage: `url(../photos/Dan-sunset-edited2.jpg)`,
         backgroundSize: '100% 100%',
         backgroundRepeat: 'no-repeat',
@@ -18,6 +18,18 @@ class Landing extends Component {
         msTransition: 'background-image 0.3s ease',
         transition: 'background-image 0.3s ease',
       },
+      backgroundImgTwo: {
+        backgroundImage: `url(../photos/Dan-hands.jpg)`,
+        backgroundSize: '100% 100%',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center fixed',
+        WebkitTransition: 'background-image 0.3s ease',
+        MozTransition: 'background-image 0.3s ease',
+        OTransition: 'background-image 0.3s ease',
+        msTransition: 'background-image 0.3s ease',
+        transition: 'background-image 0.3s ease',
+      },
+      background: 'this.state.backgroundImgOne',
       clicked: true,
       dropDown: {
         transition: '.5s cubic-bezier(0.25,0.1,0.25,1)',
@@ -32,35 +44,21 @@ class Landing extends Component {
     this.showOrHideNavMenu = this.showOrHideNavMenu.bind(this);
   }
 
+  componentWillMount() {
+    this.setState({
+      background: this.state.backgroundImgOne
+    });
+  }
+
   handleMouseOver() {
     this.setState({
-      backgroundImg: {
-        backgroundImage: `url(../photos/Dan-hands.jpg)`,
-        backgroundSize: '100% 100%',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center center fixed',
-        WebkitTransition: 'background-image 0.3s ease',
-        MozTransition: 'background-image 0.3s ease',
-        OTransition: 'background-image 0.3s ease',
-        msTransition: 'background-image 0.3s ease',
-        transition: 'background-image 0.3s ease',
-      }
+      background: this.state.backgroundImgTwo
     });
   }
 
   handleMouseOut() {
     this.setState({
-      backgroundImg: {
-        backgroundImage: `url(../photos/Dan-sunset-edited2.jpg)`,
-        backgroundSize: '100% 100%',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center center fixed',
-        WebkitTransition: 'background-image 0.3s ease',
-        MozTransition: 'background-image 0.3s ease',
-        OTransition: 'background-image 0.3s ease',
-        msTransition: 'background-image 0.3s ease',
-        transition: 'background-image 0.3s ease',
-      }
+      background: this.state.backgroundImgOne
     });
   }
 
@@ -102,7 +100,7 @@ class Landing extends Component {
 
   render() {
     return (
-      <div className="landing landing-img" style={this.state.backgroundImg}>
+      <div className="landing landing-img" style={this.state.background}>
         <header>
           <nav className="nav-main">
 
@@ -140,4 +138,4 @@ class Landing extends Component {
 }
 
 
-export default Landing;
+export default TestLanding;

@@ -29,7 +29,7 @@ class TestLanding extends Component {
         msTransition: 'background-image 0.3s ease',
         transition: 'background-image 0.3s ease',
       },
-      background: 'this.state.backgroundImgOne',
+      background: '',
       clicked: true,
       dropDown: {
         transition: '.5s cubic-bezier(0.25,0.1,0.25,1)',
@@ -46,7 +46,17 @@ class TestLanding extends Component {
 
   componentWillMount() {
     this.setState({
-      background: this.state.backgroundImgOne
+      background: this.state.backgroundImgOne,
+      backgroundImgOne: this.state.backgroundImgOne,
+      backgroundImgTwo: this.state.backgroundImgTwo,
+    });
+  }
+
+  componentDidMount() {
+    this.setState({
+      background: this.state.backgroundImgOne,
+      backgroundImgOne: this.state.backgroundImgOne,
+      backgroundImgTwo: this.state.backgroundImgTwo,
     });
   }
 

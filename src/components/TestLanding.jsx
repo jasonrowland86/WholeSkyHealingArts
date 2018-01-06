@@ -17,6 +17,7 @@ class TestLanding extends Component {
         OTransition: 'background-image 0.3s ease',
         msTransition: 'background-image 0.3s ease',
         transition: 'background-image 0.3s ease',
+        backfaceVisibility: 'hidden'
       },
       backgroundImgTwo: {
         backgroundImage: `url(../photos/Dan-hands.jpg)`,
@@ -28,6 +29,7 @@ class TestLanding extends Component {
         OTransition: 'background-image 0.3s ease',
         msTransition: 'background-image 0.3s ease',
         transition: 'background-image 0.3s ease',
+        backfaceVisibility: 'hidden'
       },
       background: '',
       clicked: true,
@@ -47,16 +49,6 @@ class TestLanding extends Component {
   componentWillMount() {
     this.setState({
       background: this.state.backgroundImgOne,
-      backgroundImgOne: this.state.backgroundImgOne,
-      backgroundImgTwo: this.state.backgroundImgTwo,
-    });
-  }
-
-  componentDidMount() {
-    this.setState({
-      background: this.state.backgroundImgOne,
-      backgroundImgOne: this.state.backgroundImgOne,
-      backgroundImgTwo: this.state.backgroundImgTwo,
     });
   }
 

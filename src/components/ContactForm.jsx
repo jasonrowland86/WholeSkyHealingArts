@@ -12,7 +12,7 @@ const ContactForm = () => {
         <br></br>
         <label for="email">Your Email:</label><br></br>
         <input className="email" type="text" name="mail" size="30"></input><br></br>
-        <span id="email-invalid">Must be a valid email address</span>
+        <span id="email-invalid" style={{color: "black"}}>Must be a valid email address</span>
         <br></br>
         <label for="message">Message:</label><br></br>
         <div className="comment">

@@ -4,6 +4,7 @@ import Header from './Header';
 import ContactForm from './ContactForm';
 import FontAwesome from 'react-fontawesome';
 import 'font-awesome/css/font-awesome.css'
+import TestContactForm from './TestContactForm';
 
 const Contact = () => {
   return (

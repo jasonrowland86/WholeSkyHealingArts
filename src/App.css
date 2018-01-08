@@ -332,6 +332,9 @@ textarea {
   background: #222324;
   transition: .1s;
 }
+.thank-you {
+  display: none;
+}
 
 /* Links */
 

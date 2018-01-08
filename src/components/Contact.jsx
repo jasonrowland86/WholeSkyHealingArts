@@ -35,7 +35,7 @@ const Contact = () => {
         <br></br>
         <hr></hr>
 
-      <ContactForm />
+      <TestContactForm />
       </div>
 
     </div>

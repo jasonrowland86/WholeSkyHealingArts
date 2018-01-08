@@ -35,7 +35,7 @@ nav div {
 }
 .nav-w-color {
   display: flex;
-  background: #F0EDEA;
+  background: #EBE8E5;
 }
 .active {
   font-weight: bolder;
@@ -81,7 +81,7 @@ nav div {
   /* z-index: -1; */
   margin-top: 2.5em;
   width: 100%;
-  background-color: #F0EDEA;
+  background-color: #EBE8E5;
 }
 .drop-down-landing {
   flex-direction: column;
@@ -122,7 +122,7 @@ nav div {
   flex: 1;
   text-align: center;
   background-color: black;
-  background-image: url(/photos/Dan-hands.jpg);
+  background-image: url("/photos/Dan-hands.jpg");
 }
 .landing-title {
   color: white;
@@ -318,7 +318,7 @@ textarea {
 
 }
 .submit {
-  background: #C0C0C7;
+  background: #E3E0DD;
   border: none;
   border-radius: 20px;
   padding: 5px 10px;;
@@ -459,6 +459,10 @@ textarea {
   /* Contact Form */
   textarea {
     width: 50vw;
+  }
+  #gform {
+    align-self: center;
+    width: 90vw;
   }
 
   /* Services */

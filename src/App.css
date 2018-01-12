@@ -46,6 +46,7 @@ nav div {
   color: black;
   margin: 1em;
   margin-top: 2em;
+  padding: 0 .5em 0 .5em;
   display: block;
   position: relative;
   text-align: center;
@@ -65,29 +66,24 @@ nav div {
   right: 0;
   bottom: 0;
 }
-.nav-link:hover {
-  border-bottom: 1px solid black;
-  height: 1.5em;
-}
 .header-logo {
   width: 3em;
   margin-left: -.2em;
-  margin-top: -1.2em;
+  margin-top: -1.3em;
 }
 .drop-down {
-  flex-direction: column;
-  float: right;
+  flex-direction: row;
   position: absolute;
-  /* z-index: -1; */
-  margin-top: 2.5em;
+  margin-top: 3.5em;
   width: 100%;
   background-color: #EBE8E5;
 }
+.drop-down-links {
+  flex-direction: column;
+}
 .drop-down-landing {
   flex-direction: column;
-  float: right;
   position: absolute;
-  z-index: -1;
   margin-top: 2.5em;
 }
 .nav-menu {
@@ -97,7 +93,7 @@ nav div {
   display: none;
 }
 .icon {
-  margin-top: .5em;
+  margin-top: .3em;
 }
 
 /* Main content of each page */
@@ -117,6 +113,7 @@ nav div {
 .hand-white {
   width: 3em;
   margin: -.7em;
+  margin-left: -1em;
 }
 .landing {
   flex: 1;
@@ -132,7 +129,7 @@ nav div {
   letter-spacing: .1em;
   width: 80vw;
   margin: 0 auto;
-  margin-top: 30vh;
+  margin-top: 38vh;
   align-self: center;
 }
 .landing-title:hover {
@@ -155,8 +152,8 @@ nav div {
   border-bottom: 1px solid white;
 }
 .landing-logo {
-  margin-left: 1.5em;
-  margin-top: 1.5em;
+  margin-left: .7em;
+  margin-top: 1em;
 }
 .landing-nav-hack {
   flex: 1;
@@ -253,6 +250,10 @@ nav div {
 .map {
   display: flex;
   justify-content: center;
+  position: absolute;
+  z-index: -5;
+  width: 100%;
+  margin-top: 12em;
 }
 .contact-heading {
   margin-top: 3em;
@@ -271,7 +272,7 @@ nav div {
 .contact-info {
   display: flex;
   flex-direction: column;
-  margin-top: 5em;
+  margin-top: 25em;
 }
 hr {
   width: 60%;
@@ -442,11 +443,35 @@ textarea {
   .drop-down-hide {
     display: inline-block;
   }
+  .nav-link {
+    margin: 1em;
+    margin-top: 2em;
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 25vw;
+    font-size: 1.5em;
+    margin: 1em auto;
+    border-bottom: 1px solid black;
+  }
+  .nav-link:hover {
+
+  }
+
+  .active {
+
+  }
+  .header-logo {
+    width: 3em;
+    /* margin-left: -.2em; */
+    margin-top: -.7em;
+  }
 
 
   /* Landing Page */
   .landing-title {
     width: 100vw;
+
   }
   .landing-title h1 {
     font-size: 13vw;
@@ -454,6 +479,12 @@ textarea {
   }
   .landing-title h3 {
     font-size: 8vw;
+  }
+  .landing-nav {
+    border-bottom: 1px solid white;
+  }
+  .landing-nav:hover {
+
   }
 
   /* Contact Form */

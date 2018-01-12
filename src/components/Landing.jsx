@@ -24,13 +24,14 @@ class Landing extends Component {
         transform: 'translateY(-100%)',
         zIndex: '-1',
         background: 'none'
-      }
+      },
     }
     this.handleMouseOver = this.handleMouseOver.bind(this);
     this.handleMouseOut = this.handleMouseOut.bind(this);
     this.handleToggleNavMenu = this.handleToggleNavMenu.bind(this);
     this.showOrHideNavMenu = this.showOrHideNavMenu.bind(this);
   }
+
 
   handleMouseOver() {
     this.setState({
@@ -107,7 +108,7 @@ class Landing extends Component {
           <nav className="nav-main">
 
             <div className="nav-left">
-              <NavLink className="landing-nav landing-logo" style={{borderBottom: 'none'}} to="/"><img className='hand-white' src='./favicons/favicon-96x96.png'></img></NavLink>
+              <NavLink className="landing-nav landing-logo" style={{borderBottom: 'none'}} to="/"><img className='hand-white' style={{width: "100%"}} src='./favicons/favicon-96x96.png'></img></NavLink>
               <NavLink className="landing-nav-hack" style={{borderBottom: 'none'}} to=""></NavLink>
             </div>
 
@@ -117,12 +118,12 @@ class Landing extends Component {
               <NavLink className="landing-nav nav-link" link-attr="Contact" to="/contact" activeClassName="active"></NavLink>
             </div>
 
-            <div onClick={this.handleToggleNavMenu} className="landing-nav-menu nav-menu" style={{color: 'white'}}><FontAwesome className="icon" name="bars" size="lg"/></div>
+            <div onClick={this.handleToggleNavMenu} className="landing-nav-menu nav-menu" style={{color: 'white'}}><FontAwesome className="icon" name="bars" size="2x"/></div>
             <div className="drop-down drop-down-hide" style={this.state.dropDown}>
-              <div className=''>
-                  <NavLink className="landing-nav nav-link" link-attr="Services" to="/services" activeClassName="active" ></NavLink>
-                  <NavLink className="landing-nav nav-link" link-attr="About" to="/about" activeClassName="active" ></NavLink>
-                  <NavLink className="landing-nav nav-link" link-attr="Contact" to="/contact" activeClassName="active" ></NavLink>
+              <div className='drop-down-links'>
+                <NavLink className="landing-nav nav-link" link-attr="Services" to="/services" activeClassName="active" ></NavLink>
+                <NavLink className="landing-nav nav-link" link-attr="About" to="/about" activeClassName="active" ></NavLink>
+                <NavLink className="landing-nav nav-link" link-attr="Contact" to="/contact" activeClassName="active" ></NavLink>
               </div>
             </div>
 

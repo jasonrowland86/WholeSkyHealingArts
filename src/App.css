@@ -74,17 +74,16 @@ nav div {
 .drop-down {
   flex-direction: row;
   position: absolute;
-  margin-top: 3.5em;
+  margin-top: em;
   width: 100%;
-  background-color: #EBE8E5;
+  background-color: rgba(235, 232, 229, .8);
+  border-top: 5.3em solid #D4D1CE;
 }
 .drop-down-links {
   flex-direction: column;
 }
 .drop-down-landing {
-  flex-direction: column;
-  position: absolute;
-  margin-top: 2.5em;
+  border-top: 5.3em solid rgba(14, 15, 15, 1);
 }
 .nav-menu {
   display: none;
@@ -113,7 +112,7 @@ nav div {
 .hand-white {
   width: 3em;
   margin: -.7em;
-  margin-left: -1em;
+  margin-left: -.8em;
 }
 .landing {
   flex: 1;
@@ -440,6 +439,9 @@ textarea {
     /* display: block; */
     margin: 1em;
   }
+  .drop-down {
+
+  }
   .drop-down-hide {
     display: inline-block;
   }
@@ -449,7 +451,7 @@ textarea {
     display: block;
     position: relative;
     text-align: center;
-    width: 25vw;
+    width: 30vw;
     font-size: 1.5em;
     margin: 1em auto;
     border-bottom: 1px solid black;
@@ -463,7 +465,7 @@ textarea {
   }
   .header-logo {
     width: 3em;
-    /* margin-left: -.2em; */
+    margin-left: -1em;
     margin-top: -.7em;
   }
 
@@ -471,7 +473,6 @@ textarea {
   /* Landing Page */
   .landing-title {
     width: 100vw;
-
   }
   .landing-title h1 {
     font-size: 13vw;

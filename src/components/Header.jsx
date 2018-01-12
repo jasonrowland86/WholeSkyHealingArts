@@ -67,7 +67,7 @@ class Header extends Component {
             <NavLink className="nav-link" link-attr="Contact" to="/contact" activeClassName="active" ></NavLink>
           </div>
 
-          <div onClick={this.handleToggleNavMenu} className="landing-nav-menu nav-menu" style={{color: 'black'}}><FontAwesome className="icon" name="bars" size="2x"/></div>
+          <div onClick={this.handleToggleNavMenu} className="landing-nav-menu nav-menu" style={{color: 'rgba(14, 15, 15, .8)', zIndex: '3'}}><FontAwesome className="icon" name="bars" size="2x"/></div>
           <div className="drop-down drop-down-hide" style={this.state.dropDown}>
             <div className='drop-down-links'>
               <NavLink className="nav-link" link-attr="Services" to="/services" activeClassName="active" ></NavLink>

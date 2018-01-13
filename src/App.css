@@ -191,7 +191,7 @@ nav div {
   display: flex;
   flex-direction: column;
   line-height: 1em;
-  /* margin-top: 5em; */
+  margin-top: 5em;
 }
 .service {
   display: flex;
@@ -199,8 +199,6 @@ nav div {
   width: 15vw;
   margin: 0 auto;
   margin-bottom: 3em;
-  /* border-top: 1px solid black;
-  border-bottom: 1px solid black; */
 }
 .service h3 {
   margin: 0;
@@ -213,10 +211,9 @@ nav div {
   flex: 1;
 }
 .massage-img {
-  width: 60vw;
-  /* width: 65vw; */
-  /* margin-top: 5em; */
-  /* margin-bottom: 5vh; */
+  width: 65vw;
+  margin-top: 5em;
+  margin-bottom: 5vh;
 }
 .service-images {
   text-align: center;

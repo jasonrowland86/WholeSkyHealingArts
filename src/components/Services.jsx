@@ -25,6 +25,11 @@ class Services extends Component {
         position: {
           transition: '.5s cubic-bezier(0.25,0.1,0.25,1)',
           transform: 'translateY(-100%)'
+        },
+        fade: {
+          visibility: 'hidden',
+          opacity: '0',
+          transition: 'visibility 0s 1s, opacity 1s linear'
         }
       });
     } else {
@@ -32,6 +37,11 @@ class Services extends Component {
         position: {
           transition: '.5s cubic-bezier(0.25,0.1,0.25,1)',
           transform: 'translateY(0%)'
+        },
+        fade: {
+          visibility: 'visible',
+          opacity: '1',
+          transition: 'opacity 1s linear'
         }
       });
     }
@@ -40,8 +50,10 @@ class Services extends Component {
   render() {
     return (
       <div className="main">
-
-        <Header />
+        <div className="overlay" style={this.state.position, this.state.fade}>
+          <Header />
+          <h1>Services</h1>
+        </div>
 
         <div className="service-content">
           <div className="service-left">

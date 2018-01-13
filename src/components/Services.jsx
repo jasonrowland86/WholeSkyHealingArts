@@ -29,7 +29,7 @@ class Services extends Component {
         fade: {
           visibility: 'hidden',
           opacity: '0',
-          transition: 'visibility 0s 1s, opacity 1s linear'
+          transition: 'visibility 0s .5s, opacity .5s linear'
         }
       });
     } else {
@@ -41,7 +41,7 @@ class Services extends Component {
         fade: {
           visibility: 'visible',
           opacity: '1',
-          transition: 'opacity 1s linear'
+          transition: 'opacity .5s linear'
         }
       });
     }

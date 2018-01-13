@@ -452,6 +452,7 @@ textarea {
     position: relative;
     text-align: center;
     width: 30vw;
+    height: 1.5em;
     font-size: 1.5em;
     margin: 1em auto;
     border-bottom: 1px solid black;

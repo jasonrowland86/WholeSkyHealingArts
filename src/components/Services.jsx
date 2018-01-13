@@ -40,12 +40,8 @@ class Services extends Component {
   render() {
     return (
       <div className="main">
-        <div className="overlay" style={this.state.position}>
 
-          <Header />
-
-          <h1>Services</h1>
-        </div>
+        <Header />
 
         <div className="service-content">
           <div className="service-left">

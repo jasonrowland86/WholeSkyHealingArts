@@ -12,10 +12,13 @@ class Header extends Component {
         transition: '.5s cubic-bezier(0.25,0.1,0.25,1)',
         transform: 'translateY(-100%)',
         zIndex: '-1',
-      }
+      },
+      navPosition: {
+        display: ''
+      },
+      isTop: true
     }
     this.handleToggleNavMenu = this.handleToggleNavMenu.bind(this);
-    this.showOrHideNavMenu = this.showOrHideNavMenu.bind(this);
   }
 
   handleToggleNavMenu() {
@@ -51,10 +54,38 @@ class Header extends Component {
     }
   }
 
+  componentDidMount() {
+    document.addEventListener('scroll', () => {
+      const isTop = window.scrollY < 10;
+      if (isTop !== this.state.isTop) {
+          this.setState({ isTop })
+      }
+      this.handleScroll();
+    });
+  }
+
+  handleScroll() {
+    if(!this.state.isTop) {
+      this.setState({
+        navPosition: {
+          transition: '.5s cubic-bezier(0.25,0.1,0.25,1)',
+          transform: 'translateY(-100%)',
+        }
+      });
+    } else {
+      this.setState({
+        navPosition: {
+          transition: '.5s cubic-bezier(0.25,0.1,0.25,1)',
+          transform: 'translateY(0%)',
+        }
+      });
+    }
+  }
+
   render() {
     return (
       <header>
-        <nav className="nav-w-color">
+        <nav style={this.state.navPosition} className="nav-w-color">
 
           <div className="nav-left">
             <NavLink className="nav-link" style={{borderBottom: 'none'}} link-attr="" to="/" ><img className="header-logo" src='./photos/favicon-96x96.png'></img></NavLink>

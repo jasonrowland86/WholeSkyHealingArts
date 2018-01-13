@@ -18,6 +18,19 @@ a {
 a:hover {
   cursor: pointer;
 }
+.overlay {
+  background-color: rgba(235, 232, 229, .9);
+  z-index: 5;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  text-align: center;
+}
+.overlay h1 {
+  margin-top: 35vh;
+  font-size: 3em;
+  color: rgba(14, 15, 15, .8);
+}
 
 /* Nav */
 nav div {
@@ -51,6 +64,11 @@ nav div {
   position: relative;
   text-align: center;
 }
+.nav-link:hover {
+  font-weight: bolder;
+  border-bottom: 1px solid black;
+  height: 1.5em;
+}
 .nav-link:before, .nav-link:after {
   content: attr(link-attr);
   text-decoration: inherit;
@@ -76,7 +94,7 @@ nav div {
   position: absolute;
   margin-top: em;
   width: 100%;
-  background-color: rgba(235, 232, 229, .8);
+  background-color: rgba(235, 232, 229, .9);
   border-top: 5.3em solid #D4D1CE;
 }
 .drop-down-links {
@@ -163,6 +181,7 @@ nav div {
   display: flex;
   flex-direction: row;
   margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 .service-left {
   width: 30vw;
@@ -172,7 +191,7 @@ nav div {
   display: flex;
   flex-direction: column;
   line-height: 1em;
-  /* margin-top: 5vh; */
+  margin-top: 5em;
 }
 .service {
   display: flex;
@@ -194,7 +213,8 @@ nav div {
   flex: 1;
 }
 .massage-img {
-  width: 60vw;
+  width: 65vw;
+  margin-top: 5em;
   margin-bottom: 5vh;
 }
 .service-images {
@@ -440,7 +460,7 @@ textarea {
     margin: 1em;
   }
   .drop-down {
-
+    /* background: #D4D1CE; */
   }
   .drop-down-hide {
     display: inline-block;

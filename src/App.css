@@ -542,4 +542,11 @@ textarea {
   .about-p-desktop {
     display: none;
   }
+  .about-text {
+    margin-bottom: 0;
+  }
+  .about-img {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
 }

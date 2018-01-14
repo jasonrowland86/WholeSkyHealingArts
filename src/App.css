@@ -28,8 +28,10 @@ a:hover {
 }
 .overlay h1 {
   margin-top: 35vh;
-  font-size: 3em;
+  font-size: 4em;
+  letter-spacing: .05em;
   color: rgba(14, 15, 15, .8);
+  font-family: 'El Messiri', sans-serif;
 }
 
 /* Nav */
@@ -92,16 +94,20 @@ nav div {
 .drop-down {
   flex-direction: row;
   position: absolute;
-  margin-top: em;
   width: 100%;
-  background-color: rgba(235, 232, 229, .9);
+  background-color: rgba(235, 232, 229, 1);
   border-top: 5.3em solid #D4D1CE;
+  border-bottom: 1px solid #D4D1CE;
 }
 .drop-down-links {
   flex-direction: column;
 }
 .drop-down-landing {
-  border-top: 5.3em solid rgba(14, 15, 15, 1);
+  flex-direction: row;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(14, 15, 15, .9);
+  border-top: 5.3em solid rgba(14, 15, 15, .5);
 }
 .nav-menu {
   display: none;
@@ -146,18 +152,18 @@ nav div {
   letter-spacing: .1em;
   width: 80vw;
   margin: 0 auto;
-  margin-top: 38vh;
+  margin-top: 30vh;
   align-self: center;
 }
 .landing-title:hover {
   cursor: pointer;
 }
 .landing-title h1 {
-  font-size: 10vw;
+  font-size: 11vw;
   margin: 0;
 }
 .landing-title h3 {
-  font-size: 5vw;
+  font-size: 6vw;
   margin: 0;
   margin-top: -.8em;
 }
@@ -227,6 +233,7 @@ nav div {
 .about-img {
   width: 40vw;
   margin-bottom: 3em;
+  margin-top: 5em;
 }
 .about-left {
   text-align: center;
@@ -239,6 +246,7 @@ nav div {
   margin-bottom: 3em;
 }
 .about-right {
+  margin-top: 5em;
   width: 50vw;
 }
 .about-right h3{
@@ -270,10 +278,10 @@ nav div {
   position: absolute;
   z-index: -5;
   width: 100%;
-  margin-top: 12em;
+  margin-top: 10em;
 }
 .contact-heading {
-  margin-top: 3em;
+  margin-top: 7em;
   margin-bottom: 0;
 }
 .media-links {

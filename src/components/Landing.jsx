@@ -89,7 +89,6 @@ class Landing extends Component {
           transition: '.5s cubic-bezier(0.25,0.1,0.25,1)',
           transform: 'translateY(0%)',
           zIndex: '0',
-          background: 'rgba(14, 15, 15, .8)'
         },
         color: {
           background: 'none',
@@ -102,7 +101,6 @@ class Landing extends Component {
           transition: '.5s cubic-bezier(0.25,0.1,0.25,1)',
           transform: 'translateY(-100%)',
           zIndex: '-1',
-          background: 'rgba(14, 15, 15, .8)'
         },
         color: {
           background: 'none',
@@ -130,7 +128,7 @@ class Landing extends Component {
             </div>
 
             <div onClick={this.handleToggleNavMenu} className="landing-nav-menu nav-menu" style={{color: 'white', zIndex: '3'}}><FontAwesome className="icon" name="bars" size="2x"/></div>
-            <div className="drop-down drop-down-landing drop-down-hide" style={this.state.dropDown}>
+            <div className="drop-down-landing drop-down-hide" style={this.state.dropDown}>
               <div className='drop-down-links'>
                 <NavLink className="landing-nav nav-link" link-attr="Services" to="/services" activeClassName="active" ></NavLink>
                 <NavLink className="landing-nav nav-link" link-attr="About" to="/about" activeClassName="active" ></NavLink>
